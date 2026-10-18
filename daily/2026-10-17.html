@@ -198,6 +198,23 @@ let VOICES = [];
 function loadVoices(){ try{ if('speechSynthesis' in window) VOICES = speechSynthesis.getVoices()||[] }catch(e){} }
 if('speechSynthesis' in window){ loadVoices(); try{ speechSynthesis.onvoiceschanged = loadVoices }catch(e){} }
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function pickVoice(){
+  if(!VOICES.length) return null;
+  const en = VOICES.filter(v=>v.lang && v.lang.toLowerCase().replace('_','-').indexOf('en-')===0);
+  if(!en.length) return null;
+  // skip known robotic voices when a better one exists
+  const good = en.filter(v=>!/espeak|pico/i.test(v.name||''));
+  const pool = good.length ? good : en;
+  const prefs = [
+    v=>/google/i.test(v.name||'') && /^en-us/i.test(v.lang||''),
+    v=>/google/i.test(v.name||'') && /^en/i.test(v.lang||''),
+    v=>/^en-us/i.test(v.lang||''),
+    v=>/^en-gb/i.test(v.lang||''),
+    v=>/^en/i.test(v.lang||''),
+  ];
+  for(const p of prefs){ const f = pool.find(p); if(f) return f; }
+  return pool[0];
+}
 function speak(w){
   if(!w) return;
   try{
@@ -205,9 +222,8 @@ function speak(w){
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(w);
     u.lang='en-US'; u.rate=.85; u.pitch=1; u.volume=1;
-    for(const v of VOICES){
-      if(v.lang && v.lang.toLowerCase().replace('_','-').indexOf('en-')===0){ u.voice=v; break }
-    }
+    const v = pickVoice();
+    if(v) u.voice = v;
     speechSynthesis.speak(u);
     setTimeout(()=>{ try{ if(speechSynthesis.paused) speechSynthesis.resume() }catch(e){} },150);
   }catch(e){}
