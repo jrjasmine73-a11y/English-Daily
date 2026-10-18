@@ -101,32 +101,32 @@ border:1px solid #fca5a5;border-radius:14px;padding:3px 12px;cursor:pointer}
 <div class="share"><button id="shareBtn">📤 分享给朋友</button></div>
 <footer>释义来源 ECDICT · 每天早上更新 · 热点新闻学英语</footer>
 <script>
-(function(){{
+(function(){
 var drawer=document.getElementById('drawer'),scrim=document.getElementById('scrim');
-function open(){{drawer.classList.add('open');scrim.classList.add('open')}}
-function close(){{drawer.classList.remove('open');scrim.classList.remove('open')}}
+function open(){drawer.classList.add('open');scrim.classList.add('open')}
+function close(){drawer.classList.remove('open');scrim.classList.remove('open')}
 document.getElementById('menuBtn').addEventListener('click',open);
 scrim.addEventListener('click',close);
 var bar=document.getElementById('filterbar'),fname=document.getElementById('filtername');
-document.getElementById('catlist').addEventListener('click',function(e){{
+document.getElementById('catlist').addEventListener('click',function(e){
   var b=e.target.closest('.cat');if(!b)return;
   var cat=b.dataset.cat;
-  document.querySelectorAll('#catlist .cat').forEach(function(x){{x.classList.remove('on')}});
+  document.querySelectorAll('#catlist .cat').forEach(function(x){x.classList.remove('on')});
   b.classList.add('on');
-  document.querySelectorAll('#grid .pcard').forEach(function(p){{
+  document.querySelectorAll('#grid .pcard').forEach(function(p){
     p.style.display=(cat==='all'||p.dataset.cat===cat)?'':'none';
-  }});
-  if(cat==='all'){{bar.classList.remove('on')}}
-  else{{fname.textContent=b.firstChild.textContent;bar.classList.add('on')}}
+  });
+  if(cat==='all'){bar.classList.remove('on')}
+  else{fname.textContent=b.firstChild.textContent;bar.classList.add('on')}
   close();
-}});
-document.getElementById('clearfilter').addEventListener('click',function(){{
-  document.querySelectorAll('#grid .pcard').forEach(function(p){{p.style.display=''}});
-  document.querySelectorAll('#catlist .cat').forEach(function(x){{x.classList.remove('on')}});
+});
+document.getElementById('clearfilter').addEventListener('click',function(){
+  document.querySelectorAll('#grid .pcard').forEach(function(p){p.style.display=''});
+  document.querySelectorAll('#catlist .cat').forEach(function(x){x.classList.remove('on')});
   document.querySelector('#catlist .cat[data-cat="all"]').classList.add('on');
   bar.classList.remove('on');
-}});
-}})();
+});
+})();
 document.getElementById('shareBtn').addEventListener('click', async ()=>{
   const data={title:'每日英语精读', text:'每天三篇热点新闻，点词查义听发音，学英语', url:location.href};
   if(navigator.share){ try{ await navigator.share(data) }catch(e){} }
