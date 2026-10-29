@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日英语精读 2026-10-30 · 每日英语精读</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+background:#fafaf9;color:#1c1917;line-height:1.75;padding:0 0 120px;max-width:760px;margin:0 auto}
+header{padding:22px 18px 14px;background:linear-gradient(135deg,#1e3a5f,#0f766e);color:#fff}
+header h1{font-size:21px;line-height:1.4;margin-bottom:8px}
+header .meta{font-size:12.5px;opacity:.85}
+.stats{display:flex;gap:8px;padding:12px 14px;flex-wrap:wrap;background:#fff;
+border-bottom:1px solid #e7e5e4;position:sticky;top:0;z-index:5}
+.chip{font-size:12.5px;padding:4px 10px;border-radius:20px;border:1.5px solid;cursor:pointer;user-select:none}
+.chip small{opacity:.7;margin-left:2px}
+.chip.off{opacity:.35}
+.chip-cet4{color:#15803d;border-color:#16a34a;background:#f0fdf4}
+.chip-cet6{color:#1d4ed8;border-color:#2563eb;background:#eff6ff}
+.chip-ielts{color:#c2410c;border-color:#ea580c;background:#fff7ed}
+.chip-toefl{color:#7e22ce;border-color:#9333ea;background:#faf5ff}
+#doc.hide-cet4 .lv-cet4,#doc.hide-cet6 .lv-cet6,#doc.hide-ielts .lv-ielts,#doc.hide-toefl .lv-toefl
+{background:none!important;border-bottom:none!important;color:inherit!important}
+article{padding:6px 18px}
+.intro{font-size:14px;color:#57534e;background:#f5f5f4;border-left:3px solid #0f766e;
+padding:10px 12px;margin:14px 0;border-radius:0 8px 8px 0}
+p.para{margin:13px 0;font-size:16.5px}
+.speaker{font-weight:700;color:#0f766e;font-size:14px;margin-right:6px}
+.w{cursor:pointer;border-radius:3px;padding:0 1px}
+.w:active{background:#fde68a!important}
+.lv-cet4{background:rgba(22,163,74,.13);border-bottom:2px solid #16a34a}
+.lv-cet6{background:rgba(37,99,235,.12);border-bottom:2px solid #2563eb}
+.lv-ielts{background:rgba(234,88,12,.13);border-bottom:2px solid #ea580c}
+.lv-toefl{background:rgba(147,51,234,.12);border-bottom:2px solid #9333ea}
+h2.sec{font-size:17px;margin:30px 0 6px;padding-top:18px;border-top:1px solid #e7e5e4}
+.sec-sub{font-size:12.5px;color:#78716c;margin-bottom:10px}
+.vgroup{margin-bottom:14px}
+.vgroup>h3{font-size:14px;margin:10px 0 6px;display:flex;align-items:center;gap:8px}
+.vgroup>h3 .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+.vitem{display:flex;gap:10px;align-items:baseline;padding:8px 10px;background:#fff;
+border:1px solid #e7e5e4;border-radius:8px;margin-bottom:6px;cursor:pointer}
+.vitem .vw{font-weight:700;font-size:15px;min-width:110px;color:#1c1917}
+.vitem .vp{font-size:12px;color:#a8a29e;min-width:90px}
+.vitem .vt{font-size:13px;color:#57534e;flex:1}
+#sheet{position:fixed;top:0;left:0;right:0;bottom:0;z-index:50;display:flex;align-items:center;justify-content:center;
+padding:18px;opacity:0;pointer-events:none;transition:opacity .2s ease}
+#sheet.open{opacity:1;pointer-events:auto}
+#backdrop{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.35);z-index:40;display:none}
+#backdrop.open{display:block}
+.card{background:#fff;border-radius:18px;padding:24px 20px 28px;max-height:78vh;overflow:auto;
+width:100%;max-width:520px;box-shadow:0 12px 40px rgba(0,0,0,.25);
+overflow-wrap:break-word;word-break:break-word}
+@media (max-width:640px){
+  #sheet{padding:12px;align-items:center}
+  .card{max-width:none;width:calc(100vw - 24px);max-height:86vh;padding:22px 18px 26px;border-radius:16px}
+  .card .cw{font-size:28px}
+  .card .cp{font-size:15px}
+  .csec{font-size:16px;line-height:1.8}
+  .clab{font-size:13px;padding:2px 10px}
+  .card .spk{font-size:17px;padding:10px 20px}
+  .card .cpy{font-size:16px;padding:12px 22px}
+  .card .x{font-size:30px;padding:8px 12px}
+}
+.card .cw{font-size:27px;font-weight:800;line-height:1.3}
+.card .cp{color:#78716c;font-size:14px;margin:4px 0 10px}
+.csec{margin-top:10px;font-size:15px;line-height:1.75}
+.clab{display:inline-block;font-size:12px;color:#fff;background:#a8a29e;border-radius:8px;
+padding:1px 9px;margin-right:8px;vertical-align:2px}
+.cen{margin-top:3px;color:#44403c}
+.cen.ex{color:#78716c;font-style:italic}
+.card .ct{font-size:17px;line-height:2;white-space:pre-line}
+.card .tags{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+.card .tag{font-size:13px;padding:4px 12px;border-radius:12px;color:#fff}
+.card .note{font-size:13px;color:#a8a29e;margin-top:8px}
+.card .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.card .x{font-size:26px;color:#a8a29e;cursor:pointer;padding:10px 14px}
+.card .spk{font-size:16px;color:#0f766e;border:1.5px solid #0f766e;border-radius:10px;
+padding:9px 18px;cursor:pointer;background:#fff}
+.card .spk:active{background:#f0fdfa}
+.card .cpy{display:inline-block;margin-top:12px;font-size:15px;color:#fff;background:#e60012;
+border:0;border-radius:10px;padding:10px 20px;cursor:pointer}
+.card .cpy:active{opacity:.85}
+.review{margin:26px 0 10px}
+.fcwrap{max-width:520px;margin:0 auto}
+.fccard{perspective:800px;cursor:pointer}
+.fcinner{position:relative;height:250px;transform-style:preserve-3d;transition:transform .35s}
+.fccard.flipped .fcinner{transform:rotateY(180deg)}
+.fcfront,.fcback{position:absolute;inset:0;backface-visibility:hidden;
+-webkit-backface-visibility:hidden;background:#fff;border:1.5px solid #e7e5e4;
+border-radius:16px;display:flex;flex-direction:column;align-items:center;
+justify-content:center;gap:6px;padding:20px;text-align:center}
+.fcback{transform:rotateY(180deg);background:#f0fdfa}
+.fcw{font-size:30px;font-weight:800;line-height:1.3}
+.fcp{color:#78716c;font-size:15px}
+.fct{font-size:18px;line-height:1.8}
+.fcback .spk{margin-top:8px}
+.fcctl{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.fcctl button{font-size:15px;border-radius:12px;padding:10px 22px;cursor:pointer;border:1.5px solid}
+#fcNo{color:#b91c1c;border-color:#fca5a5;background:#fef2f2}
+#fcYes{color:#15803d;border-color:#86efac;background:#f0fdf4}
+.fcctl button:active{opacity:.7}
+.fcprog{font-size:13px;color:#78716c}
+.fcpp{color:#78716c;font-size:13px}
+.fcex{font-size:13.5px;font-style:italic;color:#44403c;line-height:1.7;padding:0 8px}
+.fcexzh{font-size:13px;color:#78716c}
+/* quiz + translation */
+.quiz{margin:14px 0}
+.q{background:#fff;border:1.5px solid #e7e5e4;border-radius:12px;padding:14px 16px;margin:10px 0}
+.qstem{font-size:15px;margin-bottom:10px;line-height:1.9}
+.qn{color:#c0392b;font-weight:800;margin-right:6px}
+.qopts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.qo{font-size:14px;padding:9px 10px;border-radius:10px;border:1.5px solid #e7e5e4;background:#fafaf9;cursor:pointer;font-family:inherit}
+.qo.ok{background:#f0fdf4;border-color:#16a34a;color:#15803d;font-weight:700}
+.qo.bad{background:#fef2f2;border-color:#dc2626;color:#b91c1c}
+.qo:active{opacity:.75}
+.qexp{margin-top:10px;font-size:13.5px;background:#f0fdfa;border-radius:8px;padding:8px 10px;line-height:1.8}
+.qfull{color:#78716c;font-size:12.5px;font-style:italic}
+.qfullzh{color:#0f766e;font-size:12.5px}
+.qscore{font-size:14px;font-weight:700;color:#0f766e;margin:8px 2px}
+.trans{margin:14px 0}
+.titem{background:#fff;border:1.5px solid #e7e5e4;border-radius:12px;padding:14px 16px;margin:10px 0}
+.tzh{font-size:15px;margin-bottom:10px;line-height:1.8}
+.tin{width:100%;font-size:14px;border:1.5px solid #e7e5e4;border-radius:8px;padding:8px 10px;font-family:inherit;resize:vertical;box-sizing:border-box}
+.tshow{margin-top:8px;font-size:13.5px;color:#0f766e;background:#f0fdfa;border:1.5px solid #0f766e;border-radius:20px;padding:6px 20px;cursor:pointer;font-family:inherit}
+.tans{margin-top:10px;font-size:14px;background:#f0fdfa;border-radius:8px;padding:8px 10px;line-height:1.9}
+.fcdone{text-align:center;padding:26px 10px;font-size:17px}
+.fcdone button{display:block;margin:14px auto 0;font-size:15px;color:#0f766e;
+background:#fff;border:1.5px solid #0f766e;border-radius:12px;padding:10px 26px;cursor:pointer}
+.pwrap{margin:0}
+.trow{text-align:right;margin:-4px 0 8px}
+.trbtn{font-size:12.5px;color:#0f766e;background:#f0fdfa;border:1px solid #99f6e4;
+border-radius:12px;padding:3px 12px;cursor:pointer}
+.trbtn:active{background:#ccfbf1}
+.trtext{font-size:14.5px;color:#44403c;background:#f0fdfa;border-radius:10px;
+padding:12px 14px;margin:0 0 12px;line-height:1.9}
+.trtext[hidden]{display:none}
+.chip-spk{color:#0f766e;border-color:#0f766e;background:#f0fdfa}
+.chip-voice{color:#7c3aed;border-color:#7c3aed;background:#f5f3ff}
+.zh-toggle{display:inline-block;margin:8px 0 0;font-size:12px;color:#a8a29e;background:transparent;border:1px solid #e7e5e4;border-radius:999px;padding:2px 12px;cursor:pointer}
+.zh-toggle.on{color:#b45309;border-color:#f59e0b;background:#fffbeb}
+.zhwrap .zh{margin-top:6px}
+.speedbar{display:flex;align-items:center;gap:10px;margin:10px 0 4px;flex-wrap:wrap}
+.speed-btn{font-size:13px;color:#0f766e;background:#f0fdfa;border:1px solid #0f766e;border-radius:999px;padding:4px 14px;cursor:pointer}
+.speed-btn.running{color:#b45309;border-color:#f59e0b;background:#fffbeb}
+.speed-res{font-size:12.5px;color:#a8a29e}
+.fcmode{font-size:12px;color:#7c3aed;background:#f5f3ff;border:1px solid #7c3aed;border-radius:999px;padding:2px 12px;cursor:pointer;margin-left:6px;vertical-align:1px}
+footer{padding:20px 18px;font-size:12px;color:#a8a29e;text-align:center}
+.prow{display:flex;gap:10px;margin:13px 0}
+.prow .para{margin:0;font-size:15.5px}
+.pencol{flex:1.15;min-width:0}
+.pzhcol{flex:1;min-width:0;font-size:13.5px;line-height:1.8;color:#44403c;border-left:1px solid #e7e5e4;padding-left:10px}
+.kvlist{margin-bottom:6px}
+.kvitem{padding:9px 10px;background:#fff;border:1px solid #e7e5e4;border-radius:8px;margin-bottom:6px}
+.kvrow{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.kvw{font-weight:700;font-size:15.5px}
+.kvp{font-size:12.5px;color:#a8a29e}
+.kvpos{font-size:12px;color:#0f766e;background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px;padding:1px 8px}
+.kvzh{font-size:13.5px;color:#44403c;flex:1}
+.kvex{font-size:13px;color:#78716c;margin-top:3px;line-height:1.6}
+/* ---- TED-notes (PDF) style overrides ---- */
+html{background:#f0ede8}
+body{font-family:Georgia,'Times New Roman','Songti SC','SimSun','Noto Serif SC',serif;
+background:#fff;color:#1a1a1a;line-height:1.7;padding:18px 18px 120px;max-width:760px;margin:0 auto;
+box-shadow:0 2px 18px rgba(0,0,0,.12);font-size:11pt}
+.doc-head{border-bottom:3px double #c0392b;padding-bottom:14px;margin-bottom:18px;background:none;color:#1a1a1a}
+.doc-brand{color:#eb0028;font-weight:900;font-size:24pt;letter-spacing:4px;line-height:1.2}
+.doc-head h1{font-size:16pt;margin:8px 0 4px}
+.doc-head .meta{font-size:9.5pt;color:#777;margin-top:4px}
+.stats{display:flex;gap:14px;padding:10px 0;flex-wrap:wrap;border-bottom:1px solid #e8e2da;position:static;background:transparent}
+.chip{font-size:10pt;padding:0;border:0;background:none;cursor:pointer;user-select:none}
+.chip small{opacity:.7;margin-left:2px}
+.chip.off{opacity:.35}
+.chip-cet4{color:#15803d}
+.chip-cet6{color:#1d4ed8}
+.chip-ielts{color:#c2410c}
+.chip-toefl{color:#7e22ce}
+.chip-spk{color:#0f766e}
+article{padding:6px 0}
+.intro{font-size:10.5pt;color:#555;line-height:1.8;text-align:justify;margin:6px 0 14px;background:none;border:0;padding:0;border-radius:0}
+.para{break-inside:avoid;padding-top:8px;margin-bottom:16px}
+.pnum{font-size:8pt;color:#c9bfae;letter-spacing:3px;margin-bottom:4px}
+.cols{display:table;width:100%;border-collapse:collapse}
+.text{display:table-cell;width:72%;vertical-align:top;padding-right:16px}
+.notes{display:table-cell;vertical-align:top;border-left:1px solid #e8e2da;padding-left:12px;font-size:9.5pt;line-height:1.65}
+.ni{margin-bottom:5px;break-inside:avoid}
+.nw{font-weight:700;color:#222}
+.phon{color:#5a7d9a;font-size:8.5pt}
+.pos{color:#8a6d3b;font-style:italic;font-size:8.5pt}
+.ex{display:block;font-size:8.5pt;color:#777;font-style:italic;margin-top:2px;line-height:1.5}
+.en{font-size:11pt;line-height:1.8;text-align:justify;margin:0 0 6px}
+.zh{font-size:10pt;line-height:1.8;color:#555;margin:0;text-align:justify}
+.speaker{font-size:10.5pt}
+.vw{font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;text-decoration-color:#c0392b}
+h2.sec{font-size:13pt;border-left:4px solid #c0392b;padding-left:10px;margin:30px 0 10px;border-top:0;padding-top:0}
+.sec-sub{font-size:9.5pt;color:#777;margin-bottom:10px}
+.vocab-all{columns:2;column-gap:20px;font-size:9.5pt;line-height:1.7}
+footer{padding:20px 0;font-size:9pt;color:#999;text-align:center}
+
+.artsec{border-top:3px double #c0392b;padding-top:14px;margin:22px 0}
+.artsec>h2{font-size:15pt;margin:0 0 4px}
+.artsec .ameta{font-size:9.5pt;color:#777;padding-bottom:10px}
+.artsec .abody{padding:0}
+.art-head{display:flex;align-items:flex-start;gap:16px}
+.art-text{flex:1;min-width:0}
+.art-img{width:180px;max-width:32%;aspect-ratio:16/10;object-fit:cover;border-radius:6px;flex:none}
+.idx{margin:6px 0 18px}
+.idx a{display:block;padding:7px 0;color:#1a1a1a;text-decoration:none;
+font-size:11pt;border-bottom:1px solid #f0ede8}
+.idx a:last-child{border-bottom:none}
+.idx a small{display:block;color:#999;font-size:9.5pt;margin-top:2px}
+.idx a .n{color:#c0392b;font-weight:700;margin-right:6px}
+</style></head>
+<body>
+<header class="doc-head"><div class="doc-brand">每日英语精读</div><h1>2026-10-30 · 1 篇热点新闻</h1><div class="meta">共 173 词 ｜ 点击任意单词查词发音 ｜ 正文左英文右中文，右侧为本段重点词汇</div></header>
+<div class="stats"><span class="chip chip-cet4 off" data-lv="cet4">四级<small>58</small></span><span class="chip chip-cet6 off" data-lv="cet6">六级<small>6</small></span><span class="chip chip-ielts off" data-lv="ielts">雅思<small>15</small></span><span class="chip chip-toefl off" data-lv="toefl">托福<small>10</small></span><span class="chip chip-spk" id="autospk">🔊 点词发音：开</span><span class="chip chip-voice" id="voiceMode">🎙 语音：本机</span>
+<span style="font-size:9.5pt;color:#999;align-self:center">点按级别显示该级别标色（默认关闭）</span></div>
+<article id="doc" class="hide-cet4 hide-cet6 hide-ielts hide-toefl">
+<div class="idx"><a href="#art0"><span class="n">1</span>The UK says yes to drilling in the North Sea<small>News in Levels · Level 3 · 173 词</small></a></div><section class="artsec" id="art0"><div class="art-head"><div class="art-text"><h2>1. The UK says yes to drilling in the North Sea</h2><div class="ameta">News in Levels · Level 3 · 2026-10-29 · <a href="https://www.newsinlevels.com/products/the-uk-says-yes-to-drilling-in-the-north-sea-level-3/" style="color:#0f766e">原文链接</a></div></div><img class="art-img" src="data:image/jpeg;base64,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" alt=""></div><div class="abody"><div class="intro">📖 英国政府批准在北海一处颇具争议的气田钻探，尽管环保团体强烈反对。这篇文章呈现了支持与反对两方的理由：一边强调能源安全，另一边质疑化石燃料能否真正降低家庭账单。读它可以顺便学到能源与气候议题的常用表达。</div><div class="speedbar"><button type="button" class="speed-btn" data-words="133" data-title="The UK says yes to drilling in the North Sea">⏱ 测速</button><span class="speed-res"></span></div><section class="para"><div class="pnum">¶ 1</div><div class="cols"><div class="text"><p class="en"><span class="w" data-k="the">The</span> <span class="w lv-ielts" data-k="british">British</span> <span class="w lv-cet4" data-k="government">government</span> <span class="w" data-k="has">has</span> <span class="w lv-cet4" data-k="approved">approved</span> <span class="w lv-cet4 vw" data-k="drilling">drilling</span> <span class="w" data-k="at">at</span> <span class="w" data-k="a">a</span> <span class="w lv-cet6 vw" data-k="controversial">controversial</span> <span class="w" data-k="north">North</span> <span class="w" data-k="sea">Sea</span> <span class="w lv-cet4" data-k="gas">gas</span> <span class="w lv-ielts" data-k="field">field</span>, <span class="w lv-cet4" data-k="despite">despite</span> <span class="w" data-k="strong">strong</span> <span class="w lv-toefl vw" data-k="opposition">opposition</span> <span class="w" data-k="from">from</span> <span class="w lv-cet6 vw" data-k="environmental">environmental</span> <span class="w lv-ielts" data-k="groups">groups</span>.</p><div class="zhwrap"><button type="button" class="zh-toggle">中文翻译</button><p class="zh" hidden>英国政府已经批准在一处颇具争议的北海气田进行钻探，尽管环保团体强烈反对。</p></div></div><aside class="notes"><div class="ni"><span class="nw">controversial</span> <span class="phon">/.kɒntrә&#x27;vә:ʃәl/</span> <span class="pos">a.</span> 争论的；论争的；被议论的<span class="ex">e.g. The new road plan is controversial in our town.</span></div><div class="ni"><span class="nw">drilling</span> <span class="phon">/&#x27;driliŋ/</span> <span class="pos">n.</span> 演练<span class="ex">e.g. Drilling for oil can harm sea animals.</span></div><div class="ni"><span class="nw">opposition</span> <span class="phon">/.ɒpә&#x27;ziʃәn/</span> <span class="pos">n.</span> 反对；敌对；相反；在野党<span class="ex">e.g. The plan met strong opposition from local people.</span></div><div class="ni"><span class="nw">environmental</span> <span class="phon">/in.vaiәrәn&#x27;mentәl/</span> <span class="pos">a.</span> 周围的；环境的<span class="ex">e.g. Environmental groups protect forests and rivers.</span></div></aside></div></section><section class="para"><div class="pnum">¶ 2</div><div class="cols"><div class="text"><p class="en"><span class="w lv-cet4" data-k="energy">Energy</span> <span class="w lv-ielts" data-k="companies">companies</span> <span class="w" data-k="welcomed">welcomed</span> <span class="w" data-k="the">the</span> <span class="w lv-cet4" data-k="decision">decision</span> <span class="w" data-k="and">and</span> <span class="w lv-cet4 vw" data-k="predicted">predicted</span> <span class="w" data-k="the">the</span> <span class="w lv-cet4" data-k="project">project</span> <span class="w lv-toefl" data-k="could">could</span> <span class="w lv-cet4" data-k="supply">supply</span> <span class="w" data-k="over">over</span> <span class="w" data-k="six">six</span> <span class="w lv-cet4" data-k="percent">percent</span> <span class="w" data-k="of">of</span> <span class="w" data-k="the">the</span> <span class="w lv-cet4" data-k="nation">nation</span>’<span class="w" data-k="s">s</span> <span class="w lv-cet4" data-k="gas">gas</span> <span class="w" data-k="at">at</span> <span class="w lv-cet4" data-k="peak">peak</span> <span class="w lv-cet4" data-k="production">production</span>. <span class="w lv-cet4" data-k="officials">Officials</span> <span class="w lv-cet4" data-k="argue">argue</span> <span class="w" data-k="that">that</span> <span class="w lv-toefl" data-k="developing">developing</span> <span class="w lv-cet4 vw" data-k="domestic">domestic</span> <span class="w lv-ielts" data-k="resources">resources</span> <span class="w" data-k="is">is</span> <span class="w" data-k="necessary">necessary</span> <span class="w" data-k="to">to</span> <span class="w lv-cet4" data-k="boost">boost</span> <span class="w lv-cet4" data-k="national">national</span> <span class="w lv-cet4" data-k="energy">energy</span> <span class="w lv-cet4 vw" data-k="security">security</span> <span class="w" data-k="while">while</span> <span class="w lv-cet4" data-k="global">global</span> <span class="w lv-cet4" data-k="conflicts">conflicts</span> <span class="w" data-k="drive">drive</span> <span class="w" data-k="up">up</span> <span class="w lv-cet4" data-k="fuel">fuel</span> <span class="w lv-ielts" data-k="costs">costs</span>. <span class="w" data-k="the">The</span> <span class="w lv-cet4" data-k="prime">prime</span> <span class="w lv-cet4" data-k="minister">minister</span> <span class="w lv-cet4" data-k="stated">stated</span> <span class="w" data-k="that">that</span> <span class="w lv-cet4" data-k="although">although</span> <span class="w" data-k="the">the</span> <span class="w lv-ielts" data-k="country">country</span> <span class="w lv-cet4" data-k="remains">remains</span> <span class="w lv-toefl" data-k="committed">committed</span> <span class="w" data-k="to">to</span> <span class="w lv-toefl" data-k="long">long</span>-<span class="w lv-cet4" data-k="term">term</span> <span class="w lv-cet4" data-k="climate">climate</span> <span class="w lv-cet4" data-k="targets">targets</span>, <span class="w lv-cet4" data-k="oil">oil</span> <span class="w" data-k="and">and</span> <span class="w lv-cet4" data-k="gas">gas</span> <span class="w" data-k="will">will</span> <span class="w lv-toefl" data-k="still">still</span> <span class="w" data-k="be">be</span> <span class="w" data-k="needed">needed</span> <span class="w" data-k="during">during</span> <span class="w" data-k="the">the</span> <span class="w lv-cet6 vw" data-k="transition">transition</span> <span class="w" data-k="to">to</span> <span class="w lv-toefl vw" data-k="renewable">renewable</span> <span class="w lv-cet4" data-k="energy">energy</span>.</p><div class="zhwrap"><button type="button" class="zh-toggle">中文翻译</button><p class="zh" hidden>能源公司对这一决定表示欢迎，并预测该项目在产量高峰期可供应全国6%以上的天然气。官员们认为，在全球冲突推高燃料成本的背景下，开发国内资源对提升国家能源安全是必要的。首相表示，尽管英国仍致力于实现长期气候目标，但在向可再生能源过渡期间，石油和天然气仍将是必需的。</p></div></div><aside class="notes"><div class="ni"><span class="nw">predicted</span> <span class="phon">/priˈdiktid/</span> <span class="pos">v.</span> 预言；预测；预示( predict的过去式和过去分词 )<span class="ex">e.g. The weather report predicted rain for tomorrow.</span></div><div class="ni"><span class="nw">domestic</span> <span class="phon">/dәu&#x27;mestik/</span> <span class="pos">a.</span> 家庭的；国内的；驯养的<span class="ex">e.g. Domestic flights are usually shorter than international ones.</span></div><div class="ni"><span class="nw">security</span> <span class="phon">/si&#x27;kjuriti/</span> <span class="pos">n.</span> 安全；安全性；防护物；保安；可靠性；担保人；抵押品；保证金<span class="ex">e.g. Energy security matters most in cold winters.</span></div><div class="ni"><span class="nw">transition</span> <span class="phon">/træn&#x27;ziʃәn/</span> <span class="pos">n.</span> 转变；转换；变迁；过渡时期；临时转调<span class="ex">e.g. The transition to online classes took some time.</span></div><div class="ni"><span class="nw">renewable</span> <span class="phon">/ri&#x27;nju(:)әbl/</span> <span class="pos">a.</span> 可更新的；可恢复的；可继续的；可换新的；可重复的；可重说的<span class="ex">e.g. Solar power is a kind of renewable energy.</span></div><div class="ni"><span class="nw">drive up</span> <span class="pos">短语</span> 推高<span class="ex">e.g. The holiday season usually drives up hotel prices.</span></div><div class="ni"><span class="nw">energy security</span> <span class="pos">短语</span> 能源安全<span class="ex">e.g. Countries want energy security so that homes stay warm in winter.</span></div><div class="ni"><span class="nw">transition to</span> <span class="pos">短语</span> 向……过渡<span class="ex">e.g. Our town is in transition to greener buses.</span></div></aside></div></section><section class="para"><div class="pnum">¶ 3</div><div class="cols"><div class="text"><p class="en"><span class="w lv-cet4" data-k="however">However</span>, <span class="w lv-cet4" data-k="climate">climate</span> <span class="w" data-k="activists">activists</span> <span class="w" data-k="and">and</span> <span class="w lv-cet4" data-k="politicians">politicians</span> <span class="w lv-cet4" data-k="heavily">heavily</span> <span class="w lv-cet4 vw" data-k="criticized">criticized</span> <span class="w" data-k="the">the</span> <span class="w lv-cet4" data-k="approval">approval</span> <span class="w" data-k="and">and</span> <span class="w lv-cet4" data-k="warned">warned</span> <span class="w" data-k="that">that</span> <span class="w lv-cet4" data-k="increased">increased</span> <span class="w lv-cet6" data-k="fossil">fossil</span> <span class="w lv-cet4" data-k="fuel">fuel</span> <span class="w lv-cet4 vw" data-k="reliance">reliance</span> <span class="w lv-cet4" data-k="won">won</span>’<span class="w" data-k="t">t</span> <span class="w lv-cet4" data-k="lower">lower</span> <span class="w lv-cet4" data-k="household">household</span> <span class="w lv-cet4" data-k="energy">energy</span> <span class="w lv-cet4" data-k="bills">bills</span> <span class="w" data-k="because">because</span> <span class="w lv-ielts" data-k="prices">prices</span> <span class="w" data-k="are">are</span> <span class="w lv-cet4" data-k="dictated">dictated</span> <span class="w" data-k="by">by</span> <span class="w lv-cet4" data-k="international">international</span> <span class="w lv-ielts" data-k="markets">markets</span>. <span class="w" data-k="they">They</span> <span class="w lv-cet4" data-k="stress">stress</span> <span class="w" data-k="that">that</span> <span class="w" data-k="true">true</span> <span class="w lv-cet4 vw" data-k="security">security</span> <span class="w lv-cet4" data-k="requires">requires</span> <span class="w" data-k="a">a</span> <span class="w" data-k="faster">faster</span> <span class="w lv-cet4" data-k="shift">shift</span> <span class="w lv-cet4" data-k="toward">toward</span> <span class="w lv-ielts" data-k="clean">clean</span> <span class="w lv-cet4" data-k="energy">energy</span> <span class="w lv-cet4" data-k="rather">rather</span> <span class="w" data-k="than">than</span> <span class="w lv-toefl" data-k="expanding">expanding</span> <span class="w lv-cet6" data-k="fossil">fossil</span> <span class="w lv-cet4" data-k="fuel">fuel</span> <span class="w lv-cet6 vw" data-k="infrastructure">infrastructure</span>.</p><div class="zhwrap"><button type="button" class="zh-toggle">中文翻译</button><p class="zh" hidden>然而，气候活动人士和政界人士严厉批评了这一批准，并警告说，增加对化石燃料的依赖并不会降低家庭能源账单，因为价格由国际市场决定。他们强调，真正的安全需要更快地转向清洁能源，而不是扩大化石燃料基础设施。</p></div></div><aside class="notes"><div class="ni"><span class="nw">criticized</span> <span class="phon">/ˈkritisaizd/</span> <span class="pos">vt.</span> 批评(criticize的过去式)<span class="ex">e.g. Many people criticized the plan for being too costly.</span></div><div class="ni"><span class="nw">reliance</span> <span class="phon">/ri&#x27;laiәns/</span> <span class="pos">n.</span> 信任；信赖；受信赖的人(或事)<span class="ex">e.g. Our reliance on cars makes traffic worse.</span></div><div class="ni"><span class="nw">infrastructure</span> <span class="phon">/&#x27;infrәstrʌktʃә/</span> <span class="pos">n.</span> 基础结构；基础设施<span class="ex">e.g. Good roads are part of a country&#x27;s infrastructure.</span></div><div class="ni"><span class="nw">fossil fuel</span> <span class="pos">短语</span> 化石燃料<span class="ex">e.g. Cars that burn fossil fuel add to air pollution.</span></div><div class="ni"><span class="nw">clean energy</span> <span class="pos">短语</span> 清洁能源<span class="ex">e.g. Wind and solar are two common forms of clean energy.</span></div></aside></div></section><section class="para"><div class="pnum">¶ 4</div><div class="cols"><div class="text"><p class="en"><span class="w lv-ielts" data-k="difficult">Difficult</span> <span class="w lv-ielts" data-k="words">words</span>: <span class="w lv-cet6 vw" data-k="controversial">controversial</span> (<span class="w lv-cet4" data-k="causing">causing</span> <span class="w" data-k="a">a</span> <span class="w" data-k="lot">lot</span> <span class="w" data-k="of">of</span> <span class="w lv-ielts" data-k="angry">angry</span> <span class="w lv-cet4" data-k="public">public</span> <span class="w lv-cet4" data-k="discussion">discussion</span> <span class="w" data-k="and">and</span> <span class="w" data-k="strong">strong</span> <span class="w lv-cet6" data-k="disagreement">disagreement</span>), <span class="w lv-cet4" data-k="dictate">dictate</span> (<span class="w" data-k="to">to</span> <span class="w lv-cet4" data-k="state">state</span>, <span class="w lv-ielts" data-k="order">order</span>, <span class="w" data-k="or">or</span> <span class="w lv-cet4" data-k="control">control</span> <span class="w" data-k="authoritatively">authoritatively</span> <span class="w" data-k="how">how</span> <span class="w" data-k="something">something</span> <span class="w" data-k="must">must</span> <span class="w" data-k="be">be</span> <span class="w" data-k="done">done</span> <span class="w" data-k="or">or</span> <span class="w lv-toefl" data-k="decide">decide</span>), <span class="w lv-cet4 vw" data-k="reliance">reliance</span> (<span class="w lv-toefl" data-k="dependence">dependence</span> <span class="w lv-ielts" data-k="on">on</span> <span class="w" data-k="someone">someone</span> <span class="w" data-k="or">or</span> <span class="w" data-k="something">something</span> <span class="w" data-k="for">for</span> <span class="w" data-k="help">help</span> <span class="w" data-k="or">or</span> <span class="w lv-cet4" data-k="support">support</span>).</p><div class="zhwrap"><button type="button" class="zh-toggle">中文翻译</button><p class="zh" hidden>难词：controversial（引起大量愤怒的公开讨论和强烈分歧的）、dictate（权威地规定、命令或控制某事必须如何进行或做出决定）、reliance（依赖某人或某事的帮助或支持）。</p></div></div><aside class="notes"></aside></div></section><h2 class="sec">📚 重点词汇与短语</h2><div class="vocab-all"><div class="ni"><span class="nw">controversial</span> <span class="phon">/.kɒntrә&#x27;vә:ʃәl/</span> <span class="pos">a.</span> 争论的；论争的；被议论的<span class="ex">e.g. The new road plan is controversial in our town.</span></div><div class="ni"><span class="nw">drilling</span> <span class="phon">/&#x27;driliŋ/</span> <span class="pos">n.</span> 演练<span class="ex">e.g. Drilling for oil can harm sea animals.</span></div><div class="ni"><span class="nw">opposition</span> <span class="phon">/.ɒpә&#x27;ziʃәn/</span> <span class="pos">n.</span> 反对；敌对；相反；在野党<span class="ex">e.g. The plan met strong opposition from local people.</span></div><div class="ni"><span class="nw">environmental</span> <span class="phon">/in.vaiәrәn&#x27;mentәl/</span> <span class="pos">a.</span> 周围的；环境的<span class="ex">e.g. Environmental groups protect forests and rivers.</span></div><div class="ni"><span class="nw">predicted</span> <span class="phon">/priˈdiktid/</span> <span class="pos">v.</span> 预言；预测；预示( predict的过去式和过去分词 )<span class="ex">e.g. The weather report predicted rain for tomorrow.</span></div><div class="ni"><span class="nw">domestic</span> <span class="phon">/dәu&#x27;mestik/</span> <span class="pos">a.</span> 家庭的；国内的；驯养的<span class="ex">e.g. Domestic flights are usually shorter than international ones.</span></div><div class="ni"><span class="nw">security</span> <span class="phon">/si&#x27;kjuriti/</span> <span class="pos">n.</span> 安全；安全性；防护物；保安；可靠性；担保人；抵押品；保证金<span class="ex">e.g. Energy security matters most in cold winters.</span></div><div class="ni"><span class="nw">transition</span> <span class="phon">/træn&#x27;ziʃәn/</span> <span class="pos">n.</span> 转变；转换；变迁；过渡时期；临时转调<span class="ex">e.g. The transition to online classes took some time.</span></div><div class="ni"><span class="nw">renewable</span> <span class="phon">/ri&#x27;nju(:)әbl/</span> <span class="pos">a.</span> 可更新的；可恢复的；可继续的；可换新的；可重复的；可重说的<span class="ex">e.g. Solar power is a kind of renewable energy.</span></div><div class="ni"><span class="nw">criticized</span> <span class="phon">/ˈkritisaizd/</span> <span class="pos">vt.</span> 批评(criticize的过去式)<span class="ex">e.g. Many people criticized the plan for being too costly.</span></div><div class="ni"><span class="nw">reliance</span> <span class="phon">/ri&#x27;laiәns/</span> <span class="pos">n.</span> 信任；信赖；受信赖的人(或事)<span class="ex">e.g. Our reliance on cars makes traffic worse.</span></div><div class="ni"><span class="nw">infrastructure</span> <span class="phon">/&#x27;infrәstrʌktʃә/</span> <span class="pos">n.</span> 基础结构；基础设施<span class="ex">e.g. Good roads are part of a country&#x27;s infrastructure.</span></div><div class="ni"><span class="nw">drive up</span> <span class="pos">短语</span> 推高<span class="ex">e.g. The holiday season usually drives up hotel prices.</span></div><div class="ni"><span class="nw">energy security</span> <span class="pos">短语</span> 能源安全<span class="ex">e.g. Countries want energy security so that homes stay warm in winter.</span></div><div class="ni"><span class="nw">fossil fuel</span> <span class="pos">短语</span> 化石燃料<span class="ex">e.g. Cars that burn fossil fuel add to air pollution.</span></div><div class="ni"><span class="nw">clean energy</span> <span class="pos">短语</span> 清洁能源<span class="ex">e.g. Wind and solar are two common forms of clean energy.</span></div><div class="ni"><span class="nw">transition to</span> <span class="pos">短语</span> 向……过渡<span class="ex">e.g. Our town is in transition to greener buses.</span></div></div><h2 class="sec">📝 语义小测</h2><div class="sec-sub">根据英文语境，选出填空处最合适的单词或短语（15 题）</div><div class="quiz"><div class="q" data-ans="3"><div class="qstem"><span class="qn">1.</span> ____ flights are usually shorter than international ones.</div><div class="qopts"><button class="qo" data-i="0">environmental</button><button class="qo" data-i="1">predicted</button><button class="qo" data-i="2">controversial</button><button class="qo" data-i="3">domestic</button></div><div class="qexp" hidden>✓ <b>domestic</b>　家庭的；国内的；驯养的<br><span class="qfull">Domestic flights are usually shorter than international ones.</span><br><span class="qfullzh">国内航班通常比国际航班短。</span></div></div><div class="q" data-ans="1"><div class="qstem"><span class="qn">2.</span> Our town is in ____ greener buses.</div><div class="qopts"><button class="qo" data-i="0">drive up</button><button class="qo" data-i="1">transition to</button><button class="qo" data-i="2">clean energy</button><button class="qo" data-i="3">energy security</button></div><div class="qexp" hidden>✓ <b>transition to</b>　向……过渡<br><span class="qfull">Our town is in transition to greener buses.</span><br><span class="qfullzh">我们镇正在向更环保的公交车过渡。</span></div></div><div class="q" data-ans="1"><div class="qstem"><span class="qn">3.</span> Wind and solar are two common forms of ____.</div><div class="qopts"><button class="qo" data-i="0">energy security</button><button class="qo" data-i="1">clean energy</button><button class="qo" data-i="2">fossil fuel</button><button class="qo" data-i="3">drive up</button></div><div class="qexp" hidden>✓ <b>clean energy</b>　清洁能源<br><span class="qfull">Wind and solar are two common forms of clean energy.</span><br><span class="qfullzh">风能和太阳能是两种常见的清洁能源。</span></div></div><div class="q" data-ans="3"><div class="qstem"><span class="qn">4.</span> The weather report ____ rain for tomorrow.</div><div class="qopts"><button class="qo" data-i="0">security</button><button class="qo" data-i="1">transition</button><button class="qo" data-i="2">opposition</button><button class="qo" data-i="3">predicted</button></div><div class="qexp" hidden>✓ <b>predicted</b>　预言；预测；预示( predict的过去式和过去分词 )<br><span class="qfull">The weather report predicted rain for tomorrow.</span><br><span class="qfullzh">天气预报预测明天会下雨。</span></div></div><div class="q" data-ans="1"><div class="qstem"><span class="qn">5.</span> ____ for oil can harm sea animals.</div><div class="qopts"><button class="qo" data-i="0">reliance</button><button class="qo" data-i="1">drilling</button><button class="qo" data-i="2">renewable</button><button class="qo" data-i="3">controversial</button></div><div class="qexp" hidden>✓ <b>drilling</b>　演练<br><span class="qfull">Drilling for oil can harm sea animals.</span><br><span class="qfullzh">钻探石油可能会伤害海洋动物。</span></div></div><div class="q" data-ans="3"><div class="qstem"><span class="qn">6.</span> Good roads are part of a country&#x27;s ____.</div><div class="qopts"><button class="qo" data-i="0">reliance</button><button class="qo" data-i="1">drilling</button><button class="qo" data-i="2">transition</button><button class="qo" data-i="3">infrastructure</button></div><div class="qexp" hidden>✓ <b>infrastructure</b>　基础结构；基础设施<br><span class="qfull">Good roads are part of a country&#x27;s infrastructure.</span><br><span class="qfullzh">好的道路是一个国家基础设施的一部分。</span></div></div><div class="q" data-ans="2"><div class="qstem"><span class="qn">7.</span> The plan met strong ____ from local people.</div><div class="qopts"><button class="qo" data-i="0">infrastructure</button><button class="qo" data-i="1">predicted</button><button class="qo" data-i="2">opposition</button><button class="qo" data-i="3">security</button></div><div class="qexp" hidden>✓ <b>opposition</b>　反对；敌对；相反；在野党<br><span class="qfull">The plan met strong opposition from local people.</span><br><span class="qfullzh">该计划遭到了当地居民的强烈反对。</span></div></div><div class="q" data-ans="2"><div class="qstem"><span class="qn">8.</span> Many people ____ the plan for being too costly.</div><div class="qopts"><button class="qo" data-i="0">environmental</button><button class="qo" data-i="1">domestic</button><button class="qo" data-i="2">criticized</button><button class="qo" data-i="3">renewable</button></div><div class="qexp" hidden>✓ <b>criticized</b>　批评(criticize的过去式)<br><span class="qfull">Many people criticized the plan for being too costly.</span><br><span class="qfullzh">很多人批评这个计划成本太高。</span></div></div><div class="q" data-ans="0"><div class="qstem"><span class="qn">9.</span> Solar power is a kind of ____ energy.</div><div class="qopts"><button class="qo" data-i="0">renewable</button><button class="qo" data-i="1">infrastructure</button><button class="qo" data-i="2">controversial</button><button class="qo" data-i="3">reliance</button></div><div class="qexp" hidden>✓ <b>renewable</b>　可更新的；可恢复的；可继续的；可换新的；可重复的；可重说的<br><span class="qfull">Solar power is a kind of renewable energy.</span><br><span class="qfullzh">太阳能是一种可再生能源。</span></div></div><div class="q" data-ans="3"><div class="qstem"><span class="qn">10.</span> Energy ____ matters most in cold winters.</div><div class="qopts"><button class="qo" data-i="0">controversial</button><button class="qo" data-i="1">drilling</button><button class="qo" data-i="2">transition</button><button class="qo" data-i="3">security</button></div><div class="qexp" hidden>✓ <b>security</b>　安全；安全性；防护物；保安；可靠性；担保人；抵押品；保证金<br><span class="qfull">Energy security matters most in cold winters.</span><br><span class="qfullzh">能源安全在寒冷的冬天最重要。</span></div></div><div class="q" data-ans="2"><div class="qstem"><span class="qn">11.</span> Cars that burn ____ add to air pollution.</div><div class="qopts"><button class="qo" data-i="0">clean energy</button><button class="qo" data-i="1">drive up</button><button class="qo" data-i="2">fossil fuel</button><button class="qo" data-i="3">transition to</button></div><div class="qexp" hidden>✓ <b>fossil fuel</b>　化石燃料<br><span class="qfull">Cars that burn fossil fuel add to air pollution.</span><br><span class="qfullzh">燃烧化石燃料的汽车会加重空气污染。</span></div></div><div class="q" data-ans="2"><div class="qstem"><span class="qn">12.</span> Countries want ____ so that homes stay warm in winter.</div><div class="qopts"><button class="qo" data-i="0">drive up</button><button class="qo" data-i="1">fossil fuel</button><button class="qo" data-i="2">energy security</button><button class="qo" data-i="3">clean energy</button></div><div class="qexp" hidden>✓ <b>energy security</b>　能源安全<br><span class="qfull">Countries want energy security so that homes stay warm in winter.</span><br><span class="qfullzh">各国都希望保障能源安全，这样冬天家里才能保持温暖。</span></div></div><div class="q" data-ans="1"><div class="qstem"><span class="qn">13.</span> ____ groups protect forests and rivers.</div><div class="qopts"><button class="qo" data-i="0">transition</button><button class="qo" data-i="1">environmental</button><button class="qo" data-i="2">domestic</button><button class="qo" data-i="3">infrastructure</button></div><div class="qexp" hidden>✓ <b>environmental</b>　周围的；环境的<br><span class="qfull">Environmental groups protect forests and rivers.</span><br><span class="qfullzh">环保团体保护森林和河流。</span></div></div><div class="q" data-ans="3"><div class="qstem"><span class="qn">14.</span> The ____ to online classes took some time.</div><div class="qopts"><button class="qo" data-i="0">drilling</button><button class="qo" data-i="1">opposition</button><button class="qo" data-i="2">criticized</button><button class="qo" data-i="3">transition</button></div><div class="qexp" hidden>✓ <b>transition</b>　转变；转换；变迁；过渡时期；临时转调<br><span class="qfull">The transition to online classes took some time.</span><br><span class="qfullzh">向线上课程的过渡花了一些时间。</span></div></div><div class="q" data-ans="2"><div class="qstem"><span class="qn">15.</span> Our ____ on cars makes traffic worse.</div><div class="qopts"><button class="qo" data-i="0">controversial</button><button class="qo" data-i="1">infrastructure</button><button class="qo" data-i="2">reliance</button><button class="qo" data-i="3">environmental</button></div><div class="qexp" hidden>✓ <b>reliance</b>　信任；信赖；受信赖的人(或事)<br><span class="qfull">Our reliance on cars makes traffic worse.</span><br><span class="qfullzh">我们对汽车的依赖让交通更糟。</span></div></div><div class="qscore"></div></div><h2 class="sec">🖊 汉译英</h2><div class="sec-sub">把中文翻成英文——答案就是原文中的句子，先自己动手，再点"显示答案"对照</div><div class="trans"><div class="titem"><div class="tzh"><span class="qn">1.</span> 官员们认为，在全球冲突推高燃料成本的背景下，开发国内资源对提升国家能源安全是必要的。</div><textarea class="tin" rows="2" placeholder="在这里写出你的英文翻译…"></textarea><button class="tshow">显示答案</button><div class="tans" hidden>Officials argue that developing domestic resources is necessary to boost national energy security while global conflicts drive up fuel costs.</div></div><div class="titem"><div class="tzh"><span class="qn">2.</span> 他们强调，真正的安全需要更快地转向清洁能源，而不是扩大化石燃料基础设施。</div><textarea class="tin" rows="2" placeholder="在这里写出你的英文翻译…"></textarea><button class="tshow">显示答案</button><div class="tans" hidden>They stress that true security requires a faster shift toward clean energy rather than expanding fossil fuel infrastructure.</div></div></div></div></section><h2 class="sec">📇 生词复习 · 抽认卡</h2><div class="sec-sub" id="fcsub">点卡片翻面看释义；“记住了”过掉，“还不会”会重排回来，直到全记住<button type="button" class="fcmode" id="fcmode">🔁 切到汉→英</button></div><div class="review"><div class="fcwrap"><div class="fccard" id="fccard"><div class="fcinner"><div class="fcfront"><div class="fcw" id="fcw"></div><div class="fcp" id="fcp"></div></div><div class="fcback"><div class="fct" id="fct"></div><div class="fcpp" id="fcpp"></div><div class="fcex" id="fcex"></div><div class="fcexzh" id="fcexzh"></div><button class="spk" id="fcspk">🔊 朗读</button></div></div></div><div class="fcctl" id="fcctl"><button id="fcNo">✗ 还不会</button><div class="fcprog" id="fcprog"></div><button id="fcYes">✓ 记住了</button></div><div class="fcdone" id="fcdone" hidden><div class="fdmsg"></div><button id="fcrestart">🔀 再来一轮</button></div></div></div>
+</article>
+<footer>释义来源 ECDICT · 点击单词即可查词 · 每日更新</footer>
+<div id="backdrop"></div>
+<div id="sheet"><div class="card"><div id="cardBody"></div></div></div>
+<script>
+const VOCAB = {"the": {"w": "the", "p": "ðә", "t": "art. 那", "g": "", "note": "", "pos": "art.", "zh": "那", "en": [], "enex": [], "ex": ""}, "british": {"w": "british", "p": "'britiʃ", "t": "a. 英国的\nn. 英国人, 英国英语", "g": "ielts", "note": "", "pos": "a./n.", "zh": "英国的；英国人, 英国英语", "en": [], "enex": [], "ex": ""}, "government": {"w": "government", "p": "'gʌvәnmәnt", "t": "n. 政府, 内阁\n[经] 政府, 政治, 政体", "g": "cet4 cet6 ielts", "note": "", "pos": "n./[经]", "zh": "政府, 内阁；政府, 政治, 政体", "en": ["The body with the power to make and/or enforce laws to control a country, land area, people or organization.", "The relationship between a word and its dependents."], "enex": ["British government has historically centred exclusively on London."], "ex": "If the citizens must follow the law, then the government must follow the constitution."}, "has": {"w": "has", "p": "hæz", "t": "have的第三人称单数现在式", "g": "", "note": "", "pos": "", "zh": "have的第三人称单数现在式", "en": [], "enex": [], "ex": ""}, "approved": {"w": "approved", "p": "ә'pru:vd", "t": "a. 被认可的；经过检验的", "g": "cet4 cet6 toefl", "note": "", "pos": "a.", "zh": "被认可的；经过检验的", "en": ["Having received approval.", "Proven or demonstrated by experience."], "enex": ["Employees' approved expense claims will be reimbursed by the 4th of the following month."], "ex": ""}, "drilling": {"w": "drilling", "p": "'driliŋ", "t": "n. 演练\n[医] 钻", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n./[医]", "zh": "演练；钻", "en": ["The act or process of drilling.\n Making holes in objects."], "enex": [], "ex": "Drilling for oil can harm sea animals."}, "at": {"w": "at", "p": "æt", "t": "prep. 在, 向, 对\n[计] 地址转换器, 异常传输, 自动订票", "g": "", "note": "", "pos": "prep./[计]", "zh": "在, 向, 对；地址转换器, 异常传输, 自动订票", "en": [], "enex": [], "ex": ""}, "a": {"w": "a", "p": "ei", "t": "第一个字母 A; 一个; 第一的\\r\nart. [计] 累加器, 加法器, 地址, 振幅, 模拟, 区域, 面积, 汇编, 组件, 异步", "g": "", "note": "", "pos": "art.", "zh": "第一个字母 A; 一个; 第一的\\r；[计] 累加器, 加法器, 地址, 振幅, 模拟, 区域, 面积, 汇编, 组件, 异步", "en": [], "enex": [], "ex": ""}, "controversial": {"w": "controversial", "p": ".kɒntrә'vә:ʃәl", "t": "a. 争论的, 论争的, 被议论的", "g": "cet6 toefl ielts", "note": "", "pos": "a.", "zh": "争论的, 论争的, 被议论的", "en": ["Arousing or likely to arouse controversy.", "Engaging in or given to controversy; disputatious, argumentative."], "enex": [], "ex": "The new road plan is controversial in our town."}, "north": {"w": "north", "p": "nɒ:θ", "t": "n. 北方, 北\na. 北的, 北方的\nadv. 向北方, 在北方", "g": "", "note": "", "pos": "n./a./adv.", "zh": "北方, 北；北的, 北方的；向北方, 在北方", "en": ["The direction towards the pole to the left-hand side of someone facing east, specifically 0°, or (on another celestial object) the direction towards the pole lying on the northern side of the invariable plane."], "enex": ["Minnesota is in the north of the USA."], "ex": "Stock prices are heading back towards the north."}, "sea": {"w": "sea", "p": "si:", "t": "n. 海, 海洋, 海浪, 大量\n[法] 海, 海洋", "g": "", "note": "", "pos": "n./[法]", "zh": "海, 海洋, 海浪, 大量；海, 海洋", "en": ["A large body of salt water."], "enex": ["The Mediterranean Sea, the Caribbean Sea, the Sea of Crete, etc."], "ex": ""}, "gas": {"w": "gas", "p": "gæs", "t": "n. 气体, 汽油, 瓦斯\n[化] 气体; 煤气; 瓦斯; 毒气", "g": "cet4", "note": "", "pos": "n./[化]", "zh": "气体, 汽油, 瓦斯；气体; 煤气; 瓦斯; 毒气", "en": ["Matter in an intermediate state between liquid and plasma that can be contained only if it is fully surrounded by a solid (or in a bubble of liquid, or held together by gravitational pull); it can condense into a liquid, or can (rarely) become a solid directly by deposition."], "enex": ["A lot of gas had escaped from the cylinder."], "ex": "Gas-fired power stations have largely replaced coal-burning ones."}, "field": {"w": "field", "p": "fi:ld", "t": "n. 领域, 田地, 场地, 战场, 场, 域\nvt. 使...晒在场上, 使上场\na. 田间的, 野生的, 野外的, 田赛的\n[计] 域, 字段", "g": "ielts", "note": "", "pos": "n./vt./a./[计]", "zh": "领域, 田地, 场地, 战场, 场, 域；使...晒在场上, 使上场；田间的, 野生的, 野外的, 田赛的；域, 字段", "en": ["A land area free of woodland, cities, and towns; an area of open country."], "enex": ["There are several species of wild flowers growing in this field."], "ex": ""}, "despite": {"w": "despite", "p": "di'spait", "t": "n. 轻视, 憎恨\nprep. 虽然, 尽管", "g": "cet4 cet6", "note": "", "pos": "n./prep.", "zh": "轻视, 憎恨；虽然, 尽管", "en": ["Disdain, contemptuous feelings, hatred.", "Action or behaviour displaying such feelings; an outrage, insult."], "enex": [], "ex": ""}, "strong": {"w": "strong", "p": "strɒŋ", "t": "a. 强壮的, 坚固的, 坚强的, 强烈的, 有力的, 优良的\nadv. 强劲地, 有力地, 猛烈地", "g": "", "note": "", "pos": "a./adv.", "zh": "强壮的, 坚固的, 坚强的, 强烈的, 有力的, 优良的；强劲地, 有力地, 猛烈地", "en": ["Capable of producing great physical force.", "Capable of withstanding great physical force."], "enex": ["a big strong man; Jake was tall and strong", "The man was nearly drowned after a strong undercurrent swept him out to sea."], "ex": "a strong foundation; good strong shoes"}, "opposition": {"w": "opposition", "p": ".ɒpә'ziʃәn", "t": "n. 反对, 敌对, 相反, 在野党\n[医] 对生, 对向, 反抗, 反对症", "g": "toefl", "note": "", "pos": "n./[医]", "zh": "反对, 敌对, 相反, 在野党；对生, 对向, 反抗, 反对症", "en": ["The action of opposing or of being in conflict.", "An opposite or contrasting position."], "enex": ["The two politicians are in opposition to the bill.", "The proposal met with strong opposition from local residents."], "ex": "The plan met strong opposition from local people."}, "from": {"w": "from", "p": "frɒm", "t": "prep. 从, 来自, 根据", "g": "", "note": "", "pos": "prep.", "zh": "从, 来自, 根据", "en": [], "enex": [], "ex": ""}, "environmental": {"w": "environmental", "p": "in.vaiәrәn'mentәl", "t": "a. 周围的, 环境的\n[经] 环境的, 环保的", "g": "cet6 ielts", "note": "", "pos": "a./[经]", "zh": "周围的, 环境的；环境的, 环保的", "en": ["Pertaining to the environment.", "Environmentally friendly."], "enex": [], "ex": "Environmental groups protect forests and rivers."}, "groups": {"w": "groups", "p": "", "t": "n. 群组, 组；用户组；团体（group的复数形式）", "g": "ielts", "note": "", "pos": "n.", "zh": "群组, 组；用户组；团体（group的复数形式）", "en": ["plural of group"], "enex": [], "ex": ""}, "energy": {"w": "energy", "p": "'enәdʒi", "t": "n. 精力, 精神, 活力, 能量\n[化] 能; 能量", "g": "cet4 cet6 ielts", "note": "", "pos": "n./[化]", "zh": "精力, 精神, 活力, 能量；能; 能量", "en": ["The impetus behind all motion and all activity.", "The capacity to do work."], "enex": [], "ex": ""}, "companies": {"w": "companies", "p": "", "t": "n. 公司, 企业；公司财产；伙伴（company的复数形式）", "g": "ielts", "note": "", "pos": "n.", "zh": "公司, 企业；公司财产；伙伴（company的复数形式）", "en": ["plural of company", "plural of companie"], "enex": [], "ex": ""}, "welcomed": {"w": "welcomed", "p": "ˈwelkəmd", "t": "v. 欢迎( welcome的过去式和过去分词 ); 迎接; 乐于接受; 希望有", "g": "", "note": "", "pos": "v.", "zh": "欢迎( welcome的过去式和过去分词 ); 迎接; 乐于接受; 希望有", "en": ["simple past and past participle of welcome"], "enex": [], "ex": ""}, "decision": {"w": "decision", "p": "di'siʒәn", "t": "n. 决定, 决心, 决断\n[计] 判定", "g": "cet4 cet6 ielts", "note": "", "pos": "n./[计]", "zh": "决定, 决心, 决断；判定", "en": ["The act of deciding.", "A choice or judgement."], "enex": ["It is the decision of the court that movies are protected as free speech.", "His life has always been filled with big decisions."], "ex": "After agonizing deliberations, they finally proceeded with decision."}, "and": {"w": "and", "p": "ænd", "t": "conj. 和, 与\n[计] 与", "g": "", "note": "", "pos": "conj./[计]", "zh": "和, 与；与", "en": [], "enex": [], "ex": ""}, "predicted": {"w": "predicted", "p": "priˈdiktid", "t": "v. 预言, 预测, 预示( predict的过去式和过去分词 )", "g": "cet4 cet6 toefl", "note": "", "pos": "v.", "zh": "预言, 预测, 预示( predict的过去式和过去分词 )", "en": ["simple past and past participle of predict"], "enex": [], "ex": "The weather report predicted rain for tomorrow."}, "project": {"w": "project", "p": "'prɒdʒekt", "t": "n. 计划, 设计, 事业\nvt. 计划, 设计, 投掷, 发射, 使凸出, 放映\nvi. 凸出", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n./vt./vi.", "zh": "计划, 设计, 事业；计划, 设计, 投掷, 发射, 使凸出, 放映；凸出", "en": ["A planned endeavor, usually with a specific goal and accomplished in several steps or stages.", "An urban, low-income housing building."], "enex": ["Projects like Pruitt-Igoe were considered irreparably dangerous and demolished."], "ex": "a man given to projects"}, "could": {"w": "could", "p": "kud", "t": "aux. 可以, 能", "g": "toefl", "note": "", "pos": "aux.", "zh": "可以, 能", "en": [], "enex": [], "ex": ""}, "supply": {"w": "supply", "p": "sә'plai", "t": "n. 补给, 供给, 供应品\nvt. 补给, 供给, 提供, 补充\nvi. 替代", "g": "cet4 cet6 ielts", "note": "", "pos": "n./vt./vi.", "zh": "补给, 供给, 供应品；补给, 供给, 提供, 补充；替代", "en": ["The act of supplying.", "An amount of something supplied."], "enex": ["A supply of good drinking water is essential."], "ex": "She said, \"China has always had a freshwater supply problem with 20 percent of the world’s population but only 7 percent of its freshwater\"."}, "over": {"w": "over", "p": "'әuvә", "t": "adv. 结束, 越过, 从头到尾\nprep. 在...之上, 遍于...之上, 越过\na. 上面的\nvt. 越过", "g": "", "note": "", "pos": "adv./prep./a./vt.", "zh": "结束, 越过, 从头到尾；在...之上, 遍于...之上, 越过；上面的；越过", "en": [], "enex": [], "ex": ""}, "six": {"w": "six", "p": "siks", "t": "num. 六, 六个", "g": "", "note": "", "pos": "num.", "zh": "六, 六个", "en": ["A numerical value equal to 6; the number following five and preceding seven. This number of dots: (••••••)."], "enex": [], "ex": ""}, "percent": {"w": "percent", "p": "pә'sent", "t": "n. 百分比, 百分数, 部分\n[机] 百分率", "g": "cet4 cet6 ielts", "note": "", "pos": "n./[机]", "zh": "百分比, 百分数, 部分；百分率", "en": ["A percentage, a proportion (especially per hundred).", "One part per hundred; one percent, hundredth."], "enex": ["only a small percent attain the top ranks"], "ex": ""}, "of": {"w": "of", "p": "ɒv", "t": "prep. 的, 属于", "g": "", "note": "", "pos": "prep.", "zh": "的, 属于", "en": [], "enex": [], "ex": ""}, "nation": {"w": "nation", "p": "'neiʃәn", "t": "n. 国家, 民族\n[法] 民族, 国家", "g": "cet4 cet6", "note": "", "pos": "n./[法]", "zh": "国家, 民族；民族, 国家", "en": ["A historically constituted, stable community of people, formed based on a common economic life, ethnicity, language, religion, and/or territory, and manifested in a common culture."], "enex": ["The Roma are a nation without a country.", "pre-Columbian nations"], "ex": "the Dallas Cowboys nation"}, "s": {"w": "s", "p": "es", "t": "[计] 标量, 服务员, 符号, 堆栈, 状态, 存储器, 开关, 同步, 系统\n[医] 硫[黄](16号元素); 半; 骶骨的; 标记, 用法签; 光滑; 左的; 上转", "g": "", "note": "", "pos": "[计]/[医]", "zh": "标量, 服务员, 符号, 堆栈, 状态, 存储器, 开关, 同步, 系统；硫[黄](16号元素); 半; 骶骨的; 标记, 用法签; 光滑; 左的; 上转", "en": ["The nineteenth letter of the basic modern Latin alphabet."], "enex": [], "ex": ""}, "peak": {"w": "peak", "p": "pi:k", "t": "n. 山峰, 巅, 山顶, 顶点, 尖峰, 帽舌\na. 最高的, 最大值的\nvi. 到达最高点, 消瘦, 变憔悴, 逐渐缩小\nvt. 使竖起, 使达到最高点", "g": "cet4 cet6 toefl", "note": "", "pos": "n./a./vi./vt.", "zh": "山峰, 巅, 山顶, 顶点, 尖峰, 帽舌；最高的, 最大值的；到达最高点, 消瘦, 变憔悴, 逐渐缩小；使竖起, 使达到最高点", "en": ["A point; the sharp end or top of anything that terminates in a point; as, the peak, or front, of a cap.", "The highest value reached by some quantity in a time period."], "enex": ["The stock market reached a peak in September 1929."], "ex": "They reached the peak after 8 hours of climbing."}, "production": {"w": "production", "p": "prә'dʌkʃәn", "t": "n. 制造, 生产, 产物\n[医] 产生, 生成", "g": "cet4 cet6 ielts", "note": "", "pos": "n./[医]", "zh": "制造, 生产, 产物；产生, 生成", "en": ["The act of producing, making or creating something. .mw-parser-output .defdate{font-size:smaller}"], "enex": ["The widget making machine is being used for production now."], "ex": ""}, "officials": {"w": "officials", "p": "ə'fɪʃls", "t": "n. 行政官员( official的复数形式 )", "g": "cet4 cet6 toefl", "note": "", "pos": "n.", "zh": "行政官员( official的复数形式 )", "en": ["plural of official"], "enex": [], "ex": ""}, "argue": {"w": "argue", "p": "'ɑ:gju", "t": "vi. 提出理由, 争论, 辩论\nvt. 主张, 辩论, 证明, 说服", "g": "cet4 cet6 ielts", "note": "", "pos": "vi./vt.", "zh": "提出理由, 争论, 辩论；主张, 辩论, 证明, 说服", "en": ["To show grounds for concluding (that); to indicate, imply.", "To debate, disagree, or discuss opposing or differing viewpoints; to controvert; to wrangle."], "enex": ["The new increase in crime argues for even tougher jail sentences, according to some.", "He also argued for stronger methods to be used against China."], "ex": "He argued as follows: America should stop Lend-Lease convoying, because it needs to fortify its own Army with the supplies."}, "that": {"w": "that", "p": "ðæt", "t": "a. 那, 那个\nconj. 以致, 因为\npron. 那\nadv. 那么, 那样", "g": "", "note": "", "pos": "a./conj./pron./adv.", "zh": "那, 那个；以致, 因为；那；那么, 那样", "en": [], "enex": [], "ex": ""}, "developing": {"w": "developing", "p": "di'velәpiŋ", "t": "a. 发展中的\n[计] 显影", "g": "toefl", "note": "", "pos": "a./[计]", "zh": "发展中的；显影", "en": ["In the process of development.", "Of a country: becoming economically more mature or advanced; becoming industrialized."], "enex": ["a developing foetus"], "ex": ""}, "domestic": {"w": "domestic", "p": "dәu'mestik", "t": "a. 家庭的, 国内的, 驯养的\n[医] 家庭的, 家用的", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "a./[医]", "zh": "家庭的, 国内的, 驯养的；家庭的, 家用的", "en": ["Of or relating to the home.", "Of or relating to activities normally associated with the home, wherever they actually occur."], "enex": ["domestic violence;  domestic hot water"], "ex": "Domestic flights are usually shorter than international ones."}, "resources": {"w": "resources", "p": "", "t": "n. 资源；物力（resource的复数）", "g": "ielts", "note": "", "pos": "n.", "zh": "资源；物力（resource的复数）", "en": ["plural of resource"], "enex": [], "ex": ""}, "is": {"w": "is", "p": "iz", "t": "be的现在式第三人称\n[计] 加下标次序, 信息系统, 国际标准, 中间系统", "g": "", "note": "", "pos": "[计]", "zh": "be的现在式第三人称；加下标次序, 信息系统, 国际标准, 中间系统", "en": [], "enex": [], "ex": ""}, "necessary": {"w": "necessary", "p": "'nesisәri", "t": "a. 必要的；必然的；必需的", "g": "", "note": "", "pos": "a.", "zh": "必要的；必然的；必需的", "en": ["Required, essential, whether logically inescapable or needed in order to achieve a desired result or avoid some penalty.", "Unavoidable, inevitable."], "enex": ["Although I wished to think that all was false, it was yet necessary that I, who thus thought, must in some sense exist.", "It is absolutely necessary that you call and confirm your appointment."], "ex": "If it is absolutely necessary to use public computers, you should plan ahead and forward your e-mail to a temporary, disposable account."}, "to": {"w": "to", "p": "tu:", "t": "prep. 到, 向, 趋于\nadv. 向前", "g": "", "note": "", "pos": "prep./adv.", "zh": "到, 向, 趋于；向前", "en": [], "enex": [], "ex": ""}, "boost": {"w": "boost", "p": "bu:st", "t": "n. 推进, 吹捧\nvt. 推进, 提高, 宣扬, 促进", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n./vt.", "zh": "推进, 吹捧；推进, 提高, 宣扬, 促进", "en": ["A push from behind or below, as to one who is endeavoring to climb.", "Something that helps, or adds power or effectiveness; assistance."], "enex": ["The controversy gave a boost to the author's sales."], "ex": ""}, "national": {"w": "national", "p": "'næʃәnәl", "t": "a. 国家的, 国立的, 全国性的, 民族的\n[经] 全国性的, 国家的, 国民的", "g": "cet4 cet6 ielts", "note": "", "pos": "a./[经]", "zh": "国家的, 国立的, 全国性的, 民族的；全国性的, 国家的, 国民的", "en": ["Pertaining to a nation or country, especially as a whole; affecting, shared by, or existing throughout all of a nation; the state. .mw-parser-output .defdate{font-size:smaller}", "Belonging to or characteristic of a specific nation or country, as opposed to others."], "enex": ["a national assembly · on the front page of every national newspaper", "Import tariffs were raised for the national interest."], "ex": "this is their national dish · our national tendency to laugh at the French"}, "security": {"w": "security", "p": "si'kjuriti", "t": "n. 安全, 安全性, 防护物, 保安, 可靠性, 担保人, 抵押品, 保证金\n[计] 安全性, 保密性, 安全检查程序", "g": "cet4 cet6 toefl", "note": "", "pos": "n./[计]", "zh": "安全, 安全性, 防护物, 保安, 可靠性, 担保人, 抵押品, 保证金；安全性, 保密性, 安全检查程序", "en": ["The condition of not being threatened, especially physically, psychologically, emotionally, or financially.", "Something that secures."], "enex": ["Chad always carries a gun for his own security.", "The pink blanket gives little Mary lots of security."], "ex": "Energy security matters most in cold winters."}, "while": {"w": "while", "p": "hwail", "t": "n. 一会儿, (一段)时间\nconj. 当...的时候, 虽然\nvt. 消磨", "g": "", "note": "", "pos": "n./conj./vt.", "zh": "一会儿, (一段)时间；当...的时候, 虽然；消磨", "en": [], "enex": [], "ex": ""}, "global": {"w": "global", "p": "'glәubl", "t": "a. 通用的, 全球的, 球形的, 综合的, 普遍的\n[计] 共用", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "a./[计]", "zh": "通用的, 全球的, 球形的, 综合的, 普遍的；共用", "en": ["Concerning all parts of the world.", "Pertaining to the whole of something; total, universal:\n\n Of a variable, accessible by all parts of a program."], "enex": ["Pollution is a global problem.", "World War I, World War II, the Cold War, and the War on Terror are global conflicts."], "ex": "Global variables keep support engineers employed."}, "conflicts": {"w": "conflicts", "p": "ˈkɔnflikts", "t": "n. 冲突( conflict的名词复数 ); 战斗; 相互干扰; 矛盾", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n.", "zh": "冲突( conflict的名词复数 ); 战斗; 相互干扰; 矛盾", "en": ["plural of conflict"], "enex": [], "ex": ""}, "drive": {"w": "drive", "p": "draiv", "t": "n. 驾车, 快车道, 推进力, 驱动, 动力, 击球, 驱动器\nvt. 开车, 驱使, 推动, 驾驶\nvi. 开车, 猛击, 飞跑\n[计] 驱动器", "g": "", "note": "", "pos": "n./vt./vi./[计]", "zh": "驾车, 快车道, 推进力, 驱动, 动力, 击球, 驱动器；开车, 驱使, 推动, 驾驶；开车, 猛击, 飞跑；驱动器", "en": ["Planned, usually long-lasting, effort to achieve something; ability coupled with ambition, determination, and motivation."], "enex": ["Crassus had wealth and wit, but Pompey had drive and Caesar as much again."], "ex": ""}, "up": {"w": "up", "p": "ʌp", "t": "a. 向上的, 起床的, 涨的\nadv. 向上, 上涨\nprep. 在...上面, 向...的较高处", "g": "", "note": "", "pos": "a./adv./prep.", "zh": "向上的, 起床的, 涨的；向上, 上涨；在...上面, 向...的较高处", "en": [], "enex": [], "ex": ""}, "fuel": {"w": "fuel", "p": "'fjuәl", "t": "n. 燃料, 木炭\nvt. 加燃料, 供燃料\nvi. 得到燃料", "g": "cet4 toefl ielts", "note": "", "pos": "n./vt./vi.", "zh": "燃料, 木炭；加燃料, 供燃料；得到燃料", "en": ["Substance consumed to provide energy through combustion, or through chemical or nuclear reaction.", "Substance that provides nourishment for a living organism; food."], "enex": ["His books were fuel for the revolution."], "ex": "Money is the fuel for economy."}, "costs": {"w": "costs", "p": "", "t": "n. 费用；诉讼费；损失（cost的复数）", "g": "ielts", "note": "", "pos": "n.", "zh": "费用；诉讼费；损失（cost的复数）", "en": ["plural of cost"], "enex": [], "ex": ""}, "prime": {"w": "prime", "p": "praim", "t": "n. 最佳部分, 初期, 全盛期\na. 主要的, 最初的, 根本的\nv. 加油启动, 灌注, 填装", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n./a./v.", "zh": "最佳部分, 初期, 全盛期；主要的, 最初的, 根本的；加油启动, 灌注, 填装", "en": ["The first hour of daylight; the first canonical hour.", "The religious service appointed to this hour."], "enex": [], "ex": ""}, "minister": {"w": "minister", "p": "'ministә", "t": "n. 部长, 牧师, 公使\nvi. 服侍, 救助, 主持宗教仪式", "g": "cet4 cet6 ielts", "note": "", "pos": "n./vi.", "zh": "部长, 牧师, 公使；服侍, 救助, 主持宗教仪式", "en": ["A person who is trained to preach, to perform religious ceremonies, and to afford pastoral care at a Protestant church."], "enex": ["The minister said a prayer on behalf of the entire congregation."], "ex": ""}, "stated": {"w": "stated", "p": "'steitid", "t": "a. 决定了的, 一定的, 阐明的, 规定的\n[经] 固定的, 规定的, 定期的", "g": "cet4 cet6", "note": "", "pos": "a./[经]", "zh": "决定了的, 一定的, 阐明的, 规定的；固定的, 规定的, 定期的", "en": ["Expressed in a statement; uttered or written.", "Settled; established; fixed."], "enex": ["stated preaching"], "ex": "stated business hours"}, "although": {"w": "although", "p": "ɒ:l'ðou", "t": "conj. 虽然, 尽管", "g": "cet4", "note": "", "pos": "conj.", "zh": "虽然, 尽管", "en": [], "enex": [], "ex": ""}, "country": {"w": "country", "p": "'kʌntri", "t": "n. 国家, 乡村, 地区, 故乡\na. 乡下的, 农村的\n[计] DOS外部命令:用于设定国家代码, 包括日期时间及货币格式", "g": "ielts", "note": "", "pos": "n./a./[计]", "zh": "国家, 乡村, 地区, 故乡；乡下的, 农村的；DOS外部命令:用于设定国家代码, 包括日期时间及货币格式", "en": ["The territory of a nation; a sovereign state or a region once independent and still distinct in institutions, language, etc. .mw-parser-output .defdate{font-size:smaller}"], "enex": ["Basque Country"], "ex": ""}, "remains": {"w": "remains", "p": "ri'meins", "t": "n. 剩余物, 废墟, 残余\n[法] 遗体, 尸体, 遗骸", "g": "cet4 cet6", "note": "", "pos": "n./[法]", "zh": "剩余物, 废墟, 残余；遗体, 尸体, 遗骸", "en": ["The body or any of its matter that are left after a person (or any organism) dies; a corpse.", "Historical or archaeological relics."], "enex": ["They buried the remains of their longtime friend in the town cemetery."], "ex": "The victim's remains were one small piece of bone."}, "committed": {"w": "committed", "p": "", "t": "a. 献身于某种事业的\n[计] 委托的", "g": "toefl", "note": "", "pos": "a./[计]", "zh": "献身于某种事业的；委托的", "en": ["Obligated or locked in (often by a pledge) to some course of action.", "Showing commitment."], "enex": ["I'm committed to walk(ing) at least 7 miles daily."], "ex": ""}, "long": {"w": "long", "p": "lɒŋ", "t": "a. 长的, 长久的, 冗长的, 做多头的\nvi. 渴望, 热望, 极想\nadv. 长久, 始终\nn. 长时间, 长信号, 长整型\n[计] 长, 长整型", "g": "toefl", "note": "", "pos": "a./vi./adv./n./[计]", "zh": "长的, 长久的, 冗长的, 做多头的；渴望, 热望, 极想；长久, 始终；长时间, 长信号, 长整型；长, 长整型", "en": ["Having much distance in space from one end to the other."], "enex": ["I need a long piece of wood.", "It’s a long way from the Earth to the Moon."], "ex": "This table is long but not very high."}, "term": {"w": "term", "p": "tә:m", "t": "n. 术语, 专有名词, 期限, 学期, 任期, 条件, 价钱, 关系, 地位, 项, 界石\nvt. 称, 呼\n[计] 检索词; 项", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n./vt./[计]", "zh": "术语, 专有名词, 期限, 学期, 任期, 条件, 价钱, 关系, 地位, 项, 界石；称, 呼；检索词; 项", "en": ["That which limits the extent of anything; limit, extremity, bound, boundary, terminus."], "enex": ["Be sure to read the terms and conditions before signing."], "ex": "Alright, look...we can spend the holidays with your parents, but this time it will be on my terms."}, "climate": {"w": "climate", "p": "'klaimit", "t": "n. 气候, 社会趋势, 气候区\n[医] 气候", "g": "cet4 toefl", "note": "", "pos": "n./[医]", "zh": "气候, 社会趋势, 气候区；气候", "en": ["The long-term manifestations of weather and other atmospheric conditions in a given area or country, now usually represented by the statistical summary of its weather conditions during a period long enough to ensure that representative values are obtained (generally 30 years).", "The context in general of a particular political, moral, etc., situation."], "enex": ["Industries that require a lot of fossil fuels are unlikely to be popular in the current political climate."], "ex": ""}, "targets": {"w": "targets", "p": "", "t": "n. 目标；枪靶；投放范围（target的复数）", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n.", "zh": "目标；枪靶；投放范围（target的复数）", "en": ["plural of target"], "enex": [], "ex": ""}, "oil": {"w": "oil", "p": "ɒil", "t": "n. 油, 石油, 油画颜料\nvt. 涂油于, 使融化成油状, 加油于\nvi. 加燃油, 融化", "g": "cet4 ielts", "note": "", "pos": "n./vt./vi.", "zh": "油, 石油, 油画颜料；涂油于, 使融化成油状, 加油于；加燃油, 融化", "en": ["Liquid fat."], "enex": [], "ex": ""}, "will": {"w": "will", "p": "wil", "t": "n. 意志, 决心, 意愿, 意向, 干劲, 遗嘱\nvt. 用意志的力量驱使, 决意, 愿意, 立遗嘱\nvi. 下决心, 愿意\naux. 将, 愿意, 必须", "g": "", "note": "", "pos": "n./vt./vi./aux.", "zh": "意志, 决心, 意愿, 意向, 干劲, 遗嘱；用意志的力量驱使, 决意, 愿意, 立遗嘱；下决心, 愿意；将, 愿意, 必须", "en": [], "enex": [], "ex": ""}, "still": {"w": "still", "p": "stil", "t": "n. 蒸馏室, 寂静, 剧照\nv. 蒸馏, (使)平静, (使)静止\na. 静止的, 不动的, 静寂的, 不起泡的, 静物摄影的\nadv. 仍然, 更, 静止地\nconj. 然而, 但是", "g": "toefl", "note": "", "pos": "n./v./a./adv./conj.", "zh": "蒸馏室, 寂静, 剧照；蒸馏, (使)平静, (使)静止；静止的, 不动的, 静寂的, 不起泡的, 静物摄影的；仍然, 更, 静止地；然而, 但是", "en": [], "enex": [], "ex": ""}, "be": {"w": "be", "p": "bi:", "t": "v. 是, 表示, 在\n[计] 后端, 总线允许", "g": "", "note": "", "pos": "v./[计]", "zh": "是, 表示, 在；后端, 总线允许", "en": [], "enex": [], "ex": ""}, "needed": {"w": "needed", "p": "", "t": "a. 需要的", "g": "", "note": "", "pos": "a.", "zh": "需要的", "en": ["Necessary; being required."], "enex": ["A much-needed rest."], "ex": "Just-in-time as-needed support for in-house training"}, "during": {"w": "during", "p": "'djuәriŋ", "t": "prep. 在...的时候", "g": "", "note": "", "pos": "prep.", "zh": "在...的时候", "en": [], "enex": [], "ex": ""}, "transition": {"w": "transition", "p": "træn'ziʃәn", "t": "n. 转变, 转换, 变迁, 过渡时期, 临时转调\n[化] 跃迁", "g": "cet6 toefl ielts", "note": "", "pos": "n./[化]", "zh": "转变, 转换, 变迁, 过渡时期, 临时转调；跃迁", "en": ["The process of change from one form, state, style or place to another."], "enex": [], "ex": "The transition to online classes took some time."}, "renewable": {"w": "renewable", "p": "ri'nju(:)әbl", "t": "a. 可更新的, 可恢复的, 可继续的, 可换新的, 可重复的, 可重说的\n[计] 可更新, 可再生的", "g": "toefl", "note": "", "pos": "a./[计]", "zh": "可更新的, 可恢复的, 可继续的, 可换新的, 可重复的, 可重说的；可更新, 可再生的", "en": ["Able to be renewed; capable of renewal.", "Sustainable; able to be regrown or renewed; having an ongoing or continuous source of supply."], "enex": ["renewable resource", "renewable energy"], "ex": "Solar power is a kind of renewable energy."}, "however": {"w": "however", "p": "hau'evә", "t": "adv. 然而, 无论如何, 究竟怎样\nconj. 然而, 可是", "g": "cet4", "note": "", "pos": "adv./conj.", "zh": "然而, 无论如何, 究竟怎样；然而, 可是", "en": [], "enex": [], "ex": ""}, "activists": {"w": "activists", "p": "'æktɪvɪsts", "t": "n. （政治活动的）积极分子, 活动家( activist的复数形式 )", "g": "", "note": "", "pos": "n.", "zh": "（政治活动的）积极分子, 活动家( activist的复数形式 )", "en": ["plural of activist"], "enex": [], "ex": ""}, "politicians": {"w": "politicians", "p": "pɒlɪ'tɪʃnz", "t": "n. 政治家( politician的复数形式 ); 政客, 玩弄权术者", "g": "cet4 cet6", "note": "", "pos": "n.", "zh": "政治家( politician的复数形式 ); 政客, 玩弄权术者", "en": ["plural of politician"], "enex": [], "ex": ""}, "heavily": {"w": "heavily", "p": "'hevili", "t": "adv. 很重地, 严重地, 难以忍受地", "g": "cet4 cet6", "note": "", "pos": "adv.", "zh": "很重地, 严重地, 难以忍受地", "en": ["With a great weight.", "To a considerable degree, to a great extent."], "enex": ["heavily burdened", "She fell heavily into bed."], "ex": "He relied heavily on the data collected by the others."}, "criticized": {"w": "criticized", "p": "ˈkritisaizd", "t": "vt. 批评(criticize的过去式)\nv. 评论, 批评( criticize的过去式和过去分词 )", "g": "cet4 cet6", "note": "", "pos": "vt./v.", "zh": "批评(criticize的过去式)；评论, 批评( criticize的过去式和过去分词 )", "en": ["simple past and past participle of criticize"], "enex": [], "ex": "Many people criticized the plan for being too costly."}, "approval": {"w": "approval", "p": "ә'pru:vl", "t": "n. 赞成, 批准\n[化] 核准", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n./[化]", "zh": "赞成, 批准；核准", "en": ["An expression granting permission; an indication of agreement with a proposal; an acknowledgement that a person, thing, or event meets requirements.", "An expression of favorable acceptance and encouragement; a compliment that also condones."], "enex": ["I need to get an approval on this purchase order."], "ex": "Words of approval never seem to come from him."}, "warned": {"w": "warned", "p": "", "t": "a. 已警告的", "g": "cet4 cet6 toefl", "note": "", "pos": "a.", "zh": "已警告的", "en": ["simple past and past participle of warn"], "enex": [], "ex": ""}, "increased": {"w": "increased", "p": "in'kri:st", "t": "a. 增强的（increase的过去分词）", "g": "cet4 cet6", "note": "", "pos": "a.", "zh": "增强的（increase的过去分词）", "en": ["simple past and past participle of increase"], "enex": [], "ex": ""}, "fossil": {"w": "fossil", "p": "'fɒsәl", "t": "n. 化石, 古物\na. 化石的, 陈腐的, 守旧的", "g": "cet6 toefl ielts", "note": "", "pos": "n./a.", "zh": "化石, 古物；化石的, 陈腐的, 守旧的", "en": ["The mineralized remains of an animal or plant.", "Any preserved evidence of ancient life, including shells, imprints, burrows, coprolites, and organically-produced chemicals."], "enex": [], "ex": ""}, "reliance": {"w": "reliance", "p": "ri'laiәns", "t": "n. 信任, 信赖, 受信赖的人(或事)\n[法] 信任, 信赖, 信心", "g": "cet4 cet6 toefl", "note": "", "pos": "n./[法]", "zh": "信任, 信赖, 受信赖的人(或事)；信任, 信赖, 信心", "en": ["The act of relying (on or in someone or something); trust.", "The condition of being reliant or dependent."], "enex": ["Your reliance on his expertise may be misplaced.", "The industry is working to phase out its reliance on fossil fuels."], "ex": "Our reliance on cars makes traffic worse."}, "won": {"w": "won", "p": "wʌn", "t": "win的过去式和过去分词", "g": "cet4 cet6", "note": "", "pos": "", "zh": "win的过去式和过去分词", "en": ["ISO 639-3 language code for Wongo."], "enex": [], "ex": ""}, "t": {"w": "t", "p": "ti:", "t": "[计] 表, 终端, 测试, 磁道, 树, 真, 太, 万亿\n[医] 温度, 胸的, 胸廓的, 眼球内压, 眼压, 垓, 千京, 兆兆", "g": "", "note": "", "pos": "[计]/[医]", "zh": "表, 终端, 测试, 磁道, 树, 真, 太, 万亿；温度, 胸的, 胸廓的, 眼球内压, 眼压, 垓, 千京, 兆兆", "en": ["The twentieth letter of the basic modern Latin alphabet."], "enex": [], "ex": ""}, "lower": {"w": "lower", "p": "'lәuә", "t": "a. 低的, 下级的, 下层的\nvi. 降低, 跌落, 减弱\nvt. 放下, 降下, 减弱, 贬低", "g": "cet4", "note": "", "pos": "a./vi./vt.", "zh": "低的, 下级的, 下层的；降低, 跌落, 减弱；放下, 降下, 减弱, 贬低", "en": ["comparative form of low: more low", "Bottom; more towards the bottom than the middle of an object."], "enex": ["Lower Manhattan"], "ex": "Lower Burgundy"}, "household": {"w": "household", "p": "'haushәuld", "t": "n. 一家人, 家庭, 家族, 王室\na. 家庭的, 家常的, 王室的", "g": "cet4 cet6 toefl", "note": "", "pos": "n./a.", "zh": "一家人, 家庭, 家族, 王室；家庭的, 家常的, 王室的", "en": ["All the persons who live in a given house or other home; a family including attendants, servants etc.; a domestic or family establishment.", "Entirety of work and management required to sustain the household."], "enex": [], "ex": ""}, "bills": {"w": "bills", "p": "", "t": "n. 账单；议案（bill的复数）", "g": "cet4 toefl ielts", "note": "", "pos": "n.", "zh": "账单；议案（bill的复数）", "en": ["plural of bill"], "enex": [], "ex": ""}, "because": {"w": "because", "p": "bi'kɒ:z", "t": "conj. 因为", "g": "", "note": "", "pos": "conj.", "zh": "因为", "en": [], "enex": [], "ex": ""}, "prices": {"w": "prices", "p": "", "t": "n. 价格（price的复数）", "g": "ielts", "note": "", "pos": "n.", "zh": "价格（price的复数）", "en": ["plural of price"], "enex": [], "ex": ""}, "are": {"w": "are", "p": "ɑ:", "t": "be的现在时复数或第二人称单数", "g": "", "note": "", "pos": "", "zh": "be的现在时复数或第二人称单数", "en": [], "enex": [], "ex": ""}, "dictated": {"w": "dictated", "p": "dikˈteitid", "t": "v. 大声讲或读( dictate的过去式和过去分词 ); 口授; 支配; 摆布", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "v.", "zh": "大声讲或读( dictate的过去式和过去分词 ); 口授; 支配; 摆布", "en": ["simple past and past participle of dictate"], "enex": [], "ex": ""}, "by": {"w": "by", "p": "bai", "t": "prep. 被, 经, 由, 在...之旁\nadv. 经过, 在近处", "g": "", "note": "", "pos": "prep./adv.", "zh": "被, 经, 由, 在...之旁；经过, 在近处", "en": [], "enex": [], "ex": ""}, "international": {"w": "international", "p": ".intә'næʃәnәl", "t": "a. 国际的\nn. 国别设定\n[计] 国别设定", "g": "cet4 cet6 ielts", "note": "", "pos": "a./n./[计]", "zh": "国际的；国别设定；国别设定", "en": ["Of or having to do with more than one nation.\nBetween or among nations.", "Between or among nations."], "enex": ["an international discussion"], "ex": "an international competition"}, "markets": {"w": "markets", "p": "", "t": "n. 市场, 市场组合（market 复数）", "g": "ielts", "note": "", "pos": "n.", "zh": "市场, 市场组合（market 复数）", "en": ["plural of market"], "enex": [], "ex": ""}, "they": {"w": "they", "p": "ðei", "t": "pron. 他们, 它们", "g": "", "note": "", "pos": "pron.", "zh": "他们, 它们", "en": [], "enex": [], "ex": ""}, "stress": {"w": "stress", "p": "stres", "t": "n. 压力, 紧迫, 强调, 重音, 重点, 应力\nvt. 加压力于, 着重, 重读", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n./vt.", "zh": "压力, 紧迫, 强调, 重音, 重点, 应力；加压力于, 着重, 重读", "en": ["A physical, chemical, infective agent aggressing an organism.", "Aggression toward an organism resulting in a response in an attempt to restore previous conditions."], "enex": [], "ex": ""}, "true": {"w": "true", "p": "tru:", "t": "a. 真实的, 正确的, 忠诚的, 可靠的, 纯粹的, 正式的\nn. 真实, 准确\nadv. 真实地, 准确地", "g": "", "note": "", "pos": "a./n./adv.", "zh": "真实的, 正确的, 忠诚的, 可靠的, 纯粹的, 正式的；真实, 准确；真实地, 准确地", "en": ["Of a statement, conforming to the actual state of reality or fact; factually correct."], "enex": ["This is a true story."], "ex": "True, I have only read part of the book, but I like it so far."}, "requires": {"w": "requires", "p": "", "t": "n. 需要；要求；需求（require的复数）", "g": "cet4 cet6", "note": "", "pos": "n.", "zh": "需要；要求；需求（require的复数）", "en": ["third-person singular simple present indicative of require"], "enex": [], "ex": ""}, "faster": {"w": "faster", "p": "", "t": "[计] 加快", "g": "", "note": "", "pos": "[计]", "zh": "加快", "en": ["comparative form of fast: more fast"], "enex": [], "ex": ""}, "shift": {"w": "shift", "p": "ʃift", "t": "n. 变化, 移动, 轮班, 手段, 应急办法, 移位\nvt. 替换, 转移, 改变, 推卸, 变速\nvi. 转换, 移动, 转变, 推托, 变速\n[计] DOS内部命令:该命令可将批处理参数向左移动一个位置", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "n./vt./vi./[计]", "zh": "变化, 移动, 轮班, 手段, 应急办法, 移位；替换, 转移, 改变, 推卸, 变速；转换, 移动, 转变, 推托, 变速；DOS内部命令:该命令可将批处理参数向左移动一个位置", "en": ["A movement to do something, a beginning.", "An act of shifting; a slight movement or change."], "enex": ["There was a shift in the political atmosphere."], "ex": ""}, "toward": {"w": "toward", "p": "tә'wɒ:d", "t": "prep. 向, 对于, 为了\na. 即将来临的, 进行中的", "g": "cet4", "note": "", "pos": "prep./a.", "zh": "向, 对于, 为了；即将来临的, 进行中的", "en": ["In the direction of.", "In relation to (someone or something)."], "enex": ["She moved toward the door.", "What are your feelings toward him?"], "ex": "I'm saving money toward retirement."}, "clean": {"w": "clean", "p": "kli:n", "t": "a. 干净的, 清白的, 简洁的\nadv. 清洁地, 完全地\nvt. 清理, 使干净, 出空\nvi. 被搞干净\nn. 打扫", "g": "toefl ielts", "note": "", "pos": "a./adv./vt./vi./n.", "zh": "干净的, 清白的, 简洁的；清洁地, 完全地；清理, 使干净, 出空；被搞干净；打扫", "en": ["Free of dirt, filth, or impurities (extraneous matter); not dirty, filthy, or soiled.", "Of metal, having relatively few impurities."], "enex": ["Are these dishes clean? Your room is finally clean!For a baby, happiness is a full bottle and a clean diaper.", "clean steel"], "ex": "I don't think he's clean, look at those traps."}, "rather": {"w": "rather", "p": "'ræðә", "t": "adv. 宁可, 稍微, 相当", "g": "cet4 cet6", "note": "", "pos": "adv.", "zh": "宁可, 稍微, 相当", "en": ["Used to specify a choice or preference; preferably, in preference to. (Now usually followed by than) .mw-parser-output .defdate{font-size:smaller}"], "enex": ["I'd rather not have spent all the money, but it really was an emergency.", "I would like this one rather than the other one."], "ex": "It wasn't supposed to be popular; rather, it was supposed to get the job done."}, "than": {"w": "than", "p": "ðæn", "t": "conj. 比, 除...外\nprep. 比", "g": "", "note": "", "pos": "conj./prep.", "zh": "比, 除...外；比", "en": [], "enex": [], "ex": ""}, "expanding": {"w": "expanding", "p": "iks'pændiŋ", "t": "[机] 扩张工作", "g": "toefl", "note": "", "pos": "[机]", "zh": "扩张工作", "en": ["present participle and gerund of expand"], "enex": [], "ex": ""}, "infrastructure": {"w": "infrastructure", "p": "'infrәstrʌktʃә", "t": "n. 基础结构, 基础设施\n[经] 基础设施", "g": "cet6", "note": "", "pos": "n./[经]", "zh": "基础结构, 基础设施；基础设施", "en": ["An underlying base or foundation for a building, organization, or system. .mw-parser-output .defdate{font-size:smaller}"], "enex": ["The parasitic tyranny's infrastructure depends on secrecy in order to be effective."], "ex": "Good roads are part of a country's infrastructure."}, "difficult": {"w": "difficult", "p": "'difikәlt", "t": "a. 困难的", "g": "ielts", "note": "", "pos": "a.", "zh": "困难的", "en": ["Hard, not easy, requiring much effort.", "Hard to manage, uncooperative, troublesome."], "enex": ["difficult of accomplishment", "However, the difficult weather conditions will ensure Yunnan has plenty of freshwater."], "ex": "Stop being difficult and eat your broccoli—you know it's good for you."}, "words": {"w": "words", "p": "", "t": "n. 言语；话语；字（word的复数）", "g": "ielts", "note": "", "pos": "n.", "zh": "言语；话语；字（word的复数）", "en": ["plural of word"], "enex": ["Words have a longer life than deeds. — Pindar (translated)"], "ex": ""}, "causing": {"w": "causing", "p": "", "t": "vt. 成为…的原因（cause的现在分词形式）", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "vt.", "zh": "成为…的原因（cause的现在分词形式）", "en": ["present participle and gerund of cause"], "enex": [], "ex": ""}, "lot": {"w": "lot", "p": "lɒt", "t": "n. 运气, 签, 抽签, 份额, 许多, 一堆\nvt. 划分\nvi. 抽签, 抓阄", "g": "", "note": "", "pos": "n./vt./vi.", "zh": "运气, 签, 抽签, 份额, 许多, 一堆；划分；抽签, 抓阄", "en": ["A large quantity or number; a great deal.", "A separate, appropriated portion; a quantized, subdivided set consisting a whole."], "enex": ["win the whole lot (of money); i.e. jackpot", "lots of people think so"], "ex": "a lot of stationery"}, "angry": {"w": "angry", "p": "'æŋgri", "t": "a. 生气的, 愤怒的", "g": "ielts", "note": "", "pos": "a.", "zh": "生气的, 愤怒的", "en": ["Displaying or feeling anger.", "Inflamed and painful."], "enex": ["His face became angry.", "An angry mob started looting the warehouse."], "ex": "The broken glass left two angry cuts across my arm."}, "public": {"w": "public", "p": "'pʌblik", "t": "n. 公众, 民众\na. 公众的, 公共的, 公立的, 公用的", "g": "cet4 cet6 ielts", "note": "", "pos": "n./a.", "zh": "公众, 民众；公众的, 公共的, 公立的, 公用的", "en": ["Chiefly preceded by the: members of the community or the people in general, regardless of membership of any particular group."], "enex": ["Members of the public may not proceed beyond this point.", "the cinema-going public"], "ex": "the reading public"}, "discussion": {"w": "discussion", "p": "dis'kʌʃәn", "t": "n. 讨论", "g": "cet4 cet6 ielts", "note": "", "pos": "n.", "zh": "讨论", "en": ["Conversation or debate concerning a particular topic."], "enex": ["There was then a long discussion of whether to capitalize words like \"east\"."], "ex": "This topic is not open to discussion."}, "disagreement": {"w": "disagreement", "p": ".disә'gri:mәnt", "t": "n. 不合, 争论, 不一致\n[法] 不一致, 不同意, 陪审团的意见不一", "g": "cet6 ielts", "note": "", "pos": "n./[法]", "zh": "不合, 争论, 不一致；不一致, 不同意, 陪审团的意见不一", "en": ["An argument or debate.", "A condition of not agreeing or concurring."], "enex": ["They had a bit of a disagreement about what color to paint the bedroom, but they have reached a compromise.", "The theory shows considerable disagreement with the data."], "ex": "The two sides were in disagreement."}, "dictate": {"w": "dictate", "p": "'dikteit", "t": "vi. 听写, 口述, 口授\nvt. 口述, 使听写, 命令\nn. 命令, 指挥, 指令", "g": "cet4 cet6 toefl ielts", "note": "", "pos": "vi./vt./n.", "zh": "听写, 口述, 口授；口述, 使听写, 命令；命令, 指挥, 指令", "en": ["To order, command, control.", "To speak in order for someone to write down the words."], "enex": ["Etiquette dictates that wedding invitations should be acknowledged in writing.", "She is dictating a letter to a stenographer."], "ex": "The French teacher dictated a passage from Victor Hugo."}, "state": {"w": "state", "p": "steit", "t": "n. 州, 状态, 情形, 国家, 政府, 领土, 国务, 社会地位\na. 国家的, 正式的, 礼仪用的, 州的\nvt. 说明, 陈述, 规定\n[计] 状态", "g": "cet4 cet6", "note": "", "pos": "n./a./vt./[计]", "zh": "州, 状态, 情形, 国家, 政府, 领土, 国务, 社会地位；国家的, 正式的, 礼仪用的, 州的；说明, 陈述, 规定；状态", "en": ["A condition; a set of circumstances applying at any given time."], "enex": ["a state of being"], "ex": "a state of emergency"}, "order": {"w": "order", "p": "'ɒ:dә", "t": "n. 次序, 规则, 命令\nvi. 命令, 定货\nvt. 整理, 命令, 定购\nn. 顺序, 阶数\n[计] 顺序, 阶数", "g": "ielts", "note": "", "pos": "n./vi./vt./[计]", "zh": "次序, 规则, 命令；命令, 定货；整理, 命令, 定购；顺序, 阶数；顺序, 阶数", "en": ["Arrangement, disposition, or sequence.", "A position in an arrangement, disposition, or sequence."], "enex": ["put the children in age order", "It's arranged in order of frequency"], "ex": "The house is in order; the machinery is out of order."}, "or": {"w": "or", "p": "ɒ:", "t": "conj. 或, 或者\n[计] 或", "g": "", "note": "", "pos": "conj./[计]", "zh": "或, 或者；或", "en": [], "enex": [], "ex": ""}, "control": {"w": "control", "p": "kәn'trәul", "t": "n. 控制, 管理, 克制, 控制器, 操纵装置\nvt. 控制, 操纵, 抑制\n[计] 控制; 控制器", "g": "cet4 ielts", "note": "", "pos": "n./vt./[计]", "zh": "控制, 管理, 克制, 控制器, 操纵装置；控制, 操纵, 抑制；控制; 控制器", "en": ["An influence or authority over something.", "The method and means of governing the performance of any apparatus, machine or system, such as a lever, handle or button."], "enex": ["The government has complete control over the situation."], "ex": ""}, "authoritatively": {"w": "authoritatively", "p": "ɒ:'θɒritәtivli", "t": "adv. 命令式地, 官方地, 可信地", "g": "", "note": "", "pos": "adv.", "zh": "命令式地, 官方地, 可信地", "en": ["In an authoritative manner; with authority."], "enex": [], "ex": ""}, "how": {"w": "how", "p": "hau", "t": "adv. 如何, 怎样, 多少, 多么\nn. 方式", "g": "", "note": "", "pos": "adv./n.", "zh": "如何, 怎样, 多少, 多么；方式", "en": [], "enex": [], "ex": ""}, "something": {"w": "something", "p": "'sʌmθiŋ", "t": "pron. 某事, 某物", "g": "", "note": "", "pos": "pron.", "zh": "某事, 某物", "en": ["An uncertain or unspecified thing; one thing.", "A quality to a moderate degree."], "enex": ["I must have forgotten to pack something, but I can't think what.", "I have something for you in my bag."], "ex": "The performance was something of a disappointment."}, "must": {"w": "must", "p": "mʌst", "t": "n. 必须, 未发酵葡萄汁, 绝对必要的事物\naux. 必须", "g": "", "note": "", "pos": "n./aux.", "zh": "必须, 未发酵葡萄汁, 绝对必要的事物；必须", "en": [], "enex": [], "ex": ""}, "done": {"w": "done", "p": "dʌn", "t": "a. 完成了的, 好了的\ndo的过去分词", "g": "", "note": "", "pos": "a.", "zh": "完成了的, 好了的；do的过去分词", "en": ["Having completed or finished an activity.", "Completed or finished."], "enex": ["He pushed his empty plate away, sighed and pronounced \"I am done.\"", "They were done playing and were picking up the toys when he arrived."], "ex": "I'll text you when the movie's done."}, "decide": {"w": "decide", "p": "di'said", "t": "v. 决定, 判决", "g": "toefl", "note": "", "pos": "v.", "zh": "决定, 判决", "en": ["To resolve (a contest, problem, dispute, etc.); to choose, determine, or settle.", "To make a judgment, especially after deliberation."], "enex": ["The election will be decided on foreign policies.", "It was decided to meet here at midnight."], "ex": "You must decide between good and evil."}, "dependence": {"w": "dependence", "p": "di'pendәns", "t": "n. 依赖, 依存, 信赖\n[医] 依赖(如对药物的依赖,即瘾或癖), 从属, 偏利共生", "g": "toefl", "note": "", "pos": "n./[医]", "zh": "依赖, 依存, 信赖；依赖(如对药物的依赖,即瘾或癖), 从属, 偏利共生", "en": ["The state of being dependent, of relying upon another."], "enex": ["He had a deep dependence on her for guidance."], "ex": ""}, "on": {"w": "on", "p": "ɒn", "t": "prep. 在...之上\nadv. ...上去\na. 正起作用的\n[计] 打开", "g": "ielts", "note": "", "pos": "prep./adv./a./[计]", "zh": "在...之上；...上去；正起作用的；打开", "en": [], "enex": [], "ex": ""}, "someone": {"w": "someone", "p": "'sʌmwʌn", "t": "pron. 有人, 某人", "g": "", "note": "", "pos": "pron.", "zh": "有人, 某人", "en": ["One or some person of unspecified or indefinite identity."], "enex": ["Can someone help me, please?"], "ex": "Can you get me someone more knowledgeable?"}, "for": {"w": "for", "p": "fɒ:", "t": "prep. 为, 因为, 至于\nconj. 因为\n[计] DOS批处理命令:对一组参数重复执行指定的命令", "g": "", "note": "", "pos": "prep./conj./[计]", "zh": "为, 因为, 至于；因为；DOS批处理命令:对一组参数重复执行指定的命令", "en": [], "enex": [], "ex": ""}, "help": {"w": "help", "p": "help", "t": "n. 帮忙, 帮助者, 补救办法, 有益的东西\nvt. 帮助, 帮忙, 接济, 治疗, 款待\nvi. 有用, 救命, 招待\n[计] 帮助, 帮助程序; DOS外部命令: DOS命令的电子文件帮助程序", "g": "", "note": "", "pos": "n./vt./vi./[计]", "zh": "帮忙, 帮助者, 补救办法, 有益的东西；帮助, 帮忙, 接济, 治疗, 款待；有用, 救命, 招待；帮助, 帮助程序; DOS外部命令: DOS命令的电子文件帮助程序", "en": ["Action given to provide assistance; aid.", "Something or someone which provides assistance with a task."], "enex": ["I need some help with my homework.", "He was a great help to me when I was moving house."], "ex": "I can't find anything in the help about rotating an image."}, "support": {"w": "support", "p": "sә'pɒ:t", "t": "n. 支持, 支撑, 援助, 供养, 支撑物\nvt. 支援, 支撑, 帮助, 支持, 忍受, 供养, 证实\n[计] 后援; 支持", "g": "cet4 cet6 ielts", "note": "", "pos": "n./vt./[计]", "zh": "支持, 支撑, 援助, 供养, 支撑物；支援, 支撑, 帮助, 支持, 忍受, 供养, 证实；后援; 支持", "en": ["Something which supports."], "enex": ["Don't move that beam! It's a support for the whole platform."], "ex": ""}};
+const CN = {cet4:'四级',cet6:'六级',ielts:'雅思',toefl:'托福'};
+const COLOR = {cet4:'#16a34a',cet6:'#2563eb',ielts:'#ea580c',toefl:'#9333ea'};
+const sheet=document.getElementById('sheet'), backdrop=document.getElementById('backdrop');
+let autoSpk = true;
+let VOICES = [];
+/* voice source: 'local' (default, reliable offline) or 'net' (higher quality
+   when online, chosen manually via the 🎙 chip); persisted per device */
+let useNetVoice = false;
+try{ useNetVoice = localStorage.getItem('ttsMode')==='net'; }catch(e){}
+function loadVoices(){ try{ if('speechSynthesis' in window){ const vs=speechSynthesis.getVoices()||[]; if(vs.length) VOICES=vs; } }catch(e){} }
+if('speechSynthesis' in window){ loadVoices(); try{ speechSynthesis.onvoiceschanged = loadVoices }catch(e){} }
+/* Chrome often returns an empty voice list until voiceschanged fires;
+   the first taps used to race that load and speak with no usable voice
+   (phone Chrome: silent at first, works later). Wait briefly for it. */
+function ensureVoices(cb){
+  loadVoices();
+  if(VOICES.length || !('speechSynthesis' in window)){ cb(); return; }
+  let done=false;
+  const go=()=>{ if(done) return; done=true; loadVoices(); cb(); };
+  try{
+    const h=()=>{ try{ speechSynthesis.removeEventListener('voiceschanged', h); }catch(e){} go(); };
+    speechSynthesis.addEventListener('voiceschanged', h);
+  }catch(e){}
+  setTimeout(go, 700);
+}
+function _bestEnVoice(localOnly){
+  if(!VOICES.length) return null;
+  const en = VOICES.filter(v=>v.lang && v.lang.toLowerCase().replace('_','-').indexOf('en-')===0);
+  if(!en.length) return null;
+  const good = en.filter(v=>!/espeak|pico/i.test(v.name||''));
+  let pool = good.length ? good : en;
+  if(localOnly){ pool = pool.filter(v=>v.localService); if(!pool.length) return null; }
+  const prefs = [
+    v=>/google/i.test(v.name||'') && /^en-us/i.test(v.lang||''),
+    v=>/microsoft/i.test(v.name||'') && /^en-us/i.test(v.lang||''),
+    v=>/^en-us/i.test(v.lang||''),
+    v=>/^en-gb/i.test(v.lang||''),
+    v=>/^en/i.test(v.lang||''),
+  ];
+  for(const p of prefs){ const f = pool.find(p); if(f) return f; }
+  return pool[0];
+}
+/* Ordered, de-duplicated fallback candidates. Crucially this includes an
+   EXPLICIT on-device English voice and an explicit any-English voice
+   before the system default: on Chinese Windows the system default is a
+   Chinese voice and Chrome's unnamed default can be the same failing
+   Google network voice as the first pick, so the old single retry with
+   no voice could fail silently a second time. */
+function _voiceCandidates(){
+  const out=[]; const seen={};
+  const push=(v)=>{
+    const k = v ? (v.voiceURI || (v.name+'|'+v.lang)) : '__default__';
+    if(seen[k]) return; seen[k]=1; out.push(v);
+  };
+  push(pickVoice());
+  push(_bestEnVoice(true));
+  push(_bestEnVoice(false));
+  push(null);
+  return out;
+}
+let _fbAudio = null;
+/* Last resort: an online dictionary pronunciation (Youdao, American,
+   reachable in China without a proxy). This covers desktops whose
+   Windows has no English voice installed and whose only English voice
+   is a Google network voice that cannot be reached. */
+function _playFallbackAudio(w, seq){
+  if(seq!==_speakSeq) return;
+  try{
+    const vm=document.getElementById('voiceMode');
+    if(vm) vm.title='当前语音: 在线发音（有道美音）';
+    _fbAudio = new Audio('https://dict.youdao.com/dictvoice?audio='+encodeURIComponent(w)+'&type=2');
+    const p=_fbAudio.play();
+    if(p && p.catch) p.catch(()=>{});
+  }catch(e){}
+}
+function _cleanSpeakText(w){
+  return String(w||'').replace(/\s*\.\.\.\s*/g,' ').replace(/\s+/g,' ').trim();
+}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function pickVoice(){
+  if(!VOICES.length) return null;
+  const en = VOICES.filter(v=>v.lang && v.lang.toLowerCase().replace('_','-').indexOf('en-')===0);
+  if(!en.length) return null;
+  // skip known robotic voices when a better one exists
+  const good = en.filter(v=>!/espeak|pico/i.test(v.name||''));
+  const pool = good.length ? good : en;
+  // default: on-device voices (network voices can fail silently when offline);
+  // the 🎙 chip lets the user switch to network voices manually
+  const local = pool.filter(v=>v.localService);
+  const net = pool.filter(v=>!v.localService);
+  const use = useNetVoice ? (net.length?net:pool) : (local.length?local:pool);
+  const prefs = [
+    v=>/google/i.test(v.name||'') && /^en-us/i.test(v.lang||''),
+    v=>/google/i.test(v.name||'') && /^en/i.test(v.lang||''),
+    v=>/^en-us/i.test(v.lang||''),
+    v=>/^en-gb/i.test(v.lang||''),
+    v=>/^en/i.test(v.lang||''),
+  ];
+  for(const p of prefs){ const f = use.find(p); if(f) return f; }
+  return use[0];
+}
+let _lastU = null;
+let _speakSeq = 0;
+function _voiceLabel(v){
+  return v ? v.name+' ('+v.lang+', '+(v.localService?'本机':'网络')+')' : '系统默认';
+}
+function speak(raw){
+  const w=_cleanSpeakText(raw);
+  if(!w) return;
+  const seq=++_speakSeq;
+  try{ if(_fbAudio){ _fbAudio.pause(); _fbAudio=null; } }catch(e){}
+  if(!('speechSynthesis' in window)){ _playFallbackAudio(w, seq); return; }
+  ensureVoices(()=>{ if(seq===_speakSeq) _speakAttempt(w, _voiceCandidates(), 0, seq); });
+}
+/* Speak with a fallback chain over explicit voice candidates: if a voice
+   errors or never starts (silent network-voice failure), try the next
+   candidate; if every speechSynthesis voice fails, play an online
+   dictionary pronunciation instead. seq guards against stale attempts
+   from an earlier tap. */
+function _speakAttempt(w, cands, n, seq){
+  if(seq!==_speakSeq) return;
+  if(n>=cands.length){ _playFallbackAudio(w, seq); return; }
+  const v=cands[n];
+  const u = new SpeechSynthesisUtterance(w);
+  u.lang='en-US'; u.rate=.85; u.pitch=1; u.volume=1;
+  if(v) u.voice = v;
+  _lastU = u; /* keep a reference: avoids GC-silenced utterances */
+  try{
+    const vm=document.getElementById('voiceMode');
+    if(vm) vm.title='当前语音: '+_voiceLabel(v)+(n>0?'（已自动切换）':'');
+  }catch(e){}
+  let started=false, done=false;
+  const finish=(ok)=>{
+    if(done||seq!==_speakSeq) return; done=true; clearTimeout(to); clearTimeout(to2);
+    if(!ok){
+      try{ speechSynthesis.cancel(); }catch(e){}
+      setTimeout(()=>_speakAttempt(w, cands, n+1, seq), 60);
+    }
+  };
+  u.onstart=()=>{ started=true; };
+  u.onend=()=>finish(true);
+  u.onerror=()=>finish(false);
+  const to=setTimeout(()=>{ if(!started) finish(false); }, 1400); /* no-start => failed */
+  const to2=setTimeout(()=>finish(false), 8000); /* started but never ends => failed */
+  /* Only cancel when something is actually queued: a bare cancel() right
+     before speak() silently swallows the utterance on some Chrome builds.
+     The short delay after a real cancel makes the queue reliable
+     (the Android no-sound bug). */
+  try{ if(speechSynthesis.speaking||speechSynthesis.pending) speechSynthesis.cancel(); }catch(e){}
+  try{ if(speechSynthesis.paused) speechSynthesis.resume(); }catch(e){}
+  setTimeout(()=>{ try{ if(seq===_speakSeq){ speechSynthesis.speak(u); if(speechSynthesis.paused) speechSynthesis.resume(); } }catch(e){ finish(false); } }, 90);
+  setTimeout(()=>{ try{ if(speechSynthesis.paused) speechSynthesis.resume(); }catch(e){} }, 350);
+}
+function showWord(key, surface){
+  const v=VOCAB[key];
+  let html='';
+  if(v){
+    const tags=v.g?v.g.split(' '):[];
+    html=`<div class="row"><div class="cw">${esc(surface||v.w)}</div><div style="display:flex;align-items:center;gap:4px"><button class="spk" data-say="${esc(v.w)}">\uD83D\uDD0A \u6717\u8BFB</button><span class="x" data-close="1">\u2715</span></div></div>
+    <div class="cp">/${esc(v.p)}/</div>
+    ${v.pos?`<div class="csec"><span class="clab">\u8BCD\u6027</span><span>${esc(v.pos)}</span></div>`:''}
+    <div class="csec"><span class="clab">\u4E2D\u6587\u610F\u601D</span><span>${esc(v.zh||v.t)}</span></div>
+    ${v.en&&v.en.length?`<div class="csec"><span class="clab">\u82F1\u8BED\u91CA\u4E49</span>${v.en.map((d,i)=>`<div class="cen">${i+1}. ${esc(d)}</div>`).join('')}</div>`:''}
+    ${v.enex&&v.enex.length?`<div class="csec"><span class="clab">\u642D\u914D\u7528\u6CD5</span>${v.enex.map(d=>`<div class="cen ex">${esc(d)}</div>`).join('')}</div>`:''}
+    ${v.ex?`<div class="csec"><span class="clab">\u4F8B\u53E5</span><div class="cen ex">${esc(v.ex)}</div></div>`:''}
+    ${v.note?`<div class="note">${esc(v.note)}</div>`:''}
+    ${tags.length?`<div class="tags">${tags.map(t=>`<span class="tag" style="background:${COLOR[t]}">${CN[t]}\u8BCD\u6C47</span>`).join('')}</div>`:''}
+    <div><button class="cpy" data-copy="${esc(v.w)}">\u590D\u5236\u5355\u8BCD</button></div>`;
+  }else{
+    html=`<div class="row"><div class="cw">${esc(surface||key)}</div><span class="x" data-close="1">\u2715</span></div>
+    <div class="ct" style="color:#a8a29e">\u8BCD\u5E93\u6682\u672A\u6536\u5F55\u8FD9\u4E2A\u8BCD\uFF08\u53EF\u80FD\u662F\u4EBA\u540D\u3001\u5730\u540D\u6216\u4E13\u6709\u540D\u8BCD\uFF09\u3002</div>
+    <div><button class="cpy" data-copy="${esc(surface||key)}">\u590D\u5236\u5355\u8BCD</button></div>`;
+  }
+  document.getElementById('cardBody').innerHTML=html;
+  sheet.classList.add('open');backdrop.classList.add('open');
+}
+function closeSheet(){sheet.classList.remove('open');backdrop.classList.remove('open')}
+function copyWord(w, btn){
+  const ta=document.createElement('textarea');
+  ta.value=w; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  let ok=false;
+  try{ ok=document.execCommand('copy') }catch(e){}
+  document.body.removeChild(ta);
+  if(ok && btn){ const old=btn.textContent; btn.textContent='\u5DF2\u590D\u5236 \u2713'; setTimeout(()=>{ btn.textContent=old },1500) }
+}
+function wordOf(el){
+  const v=VOCAB[el.dataset.k];
+  return v ? v.w : (el.dataset.s || el.textContent);
+}
+/* ---- reading speed timer ---- */
+let spd={on:false};
+function spdFmt(ms){const s=Math.floor(ms/1000);return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');}
+function spdStop(rec){
+  if(!spd.on)return;
+  clearInterval(spd.int);
+  const secs=(Date.now()-spd.t0)/1000;
+  spd.btn.textContent='\u23F1 \u6D4B\u901F';spd.btn.classList.remove('running');
+  if(rec&&secs>3){
+    const wpm=Math.round(spd.words/(secs/60));
+    let hist=[];try{hist=JSON.parse(localStorage.getItem('readSpeed')||'[]');}catch(e){}
+    hist.push({d:new Date().toISOString().slice(0,10),t:spd.title,w:wpm});
+    hist=hist.slice(-30);
+    try{localStorage.setItem('readSpeed',JSON.stringify(hist));}catch(e){}
+    const best=Math.max.apply(null,hist.map(function(h){return h.w;}));
+    spd.res.textContent='本次 '+wpm+' \u8BCD/\u5206 \u00B7 \u7528\u65F6 '+Math.round(secs)+' \u79D2 \u00B7 \u5386\u53F2\u6700\u4F73 '+best+' \u8BCD/\u5206';
+  }else{spd.res.textContent='';}
+  spd.on=false;
+}
+function spdToggle(btn){
+  if(spd.on&&spd.btn===btn){spdStop(true);return;}
+  spdStop(true); /* a different article's timer: record the running one first */
+  spd={on:true,t0:Date.now(),words:+btn.dataset.words||0,title:btn.dataset.title||'',btn:btn,res:btn.parentElement.querySelector('.speed-res')};
+  btn.textContent='\u23F9 00:00';btn.classList.add('running');
+  spd.res.textContent='\u8BA1\u65F6\u4E2D\u2026\u8BFB\u5B8C\u70B9\u300C\u7ED3\u675F\u300D';
+  spd.int=setInterval(function(){btn.textContent='\u23F9 '+spdFmt(Date.now()-spd.t0);},500);
+}
+document.addEventListener('click',e=>{
+  const say=e.target.closest('[data-say]');
+  if(say){ speak(say.dataset.say); return }
+  const cp=e.target.closest('[data-copy]');
+  if(cp){ copyWord(cp.dataset.copy, cp); return }
+  if(e.target.closest('[data-close]')){ closeSheet(); return }
+  const tb=e.target.closest('.trbtn');
+  if(tb){
+    const t=document.getElementById(tb.dataset.t);
+    if(t){ const hidden=t.hasAttribute('hidden');
+      if(hidden){ t.removeAttribute('hidden'); tb.textContent='\u6536\u8D77\u8BD1\u6587' }
+      else{ t.setAttribute('hidden',''); tb.textContent='\u8BD1\u6587' } }
+    return;
+  }
+  const zht=e.target.closest('.zh-toggle');
+  if(zht){
+    const p=zht.parentElement.querySelector('.zh');
+    const hidden=p.hasAttribute('hidden');
+    if(hidden){p.removeAttribute('hidden');zht.textContent='\u6536\u8D77\u8BD1\u6587';zht.classList.add('on');}
+    else{p.setAttribute('hidden','');zht.textContent='\u4E2D\u6587\u7FFB\u8BD1';zht.classList.remove('on');}
+    return;
+  }
+  const spb=e.target.closest('.speed-btn');
+  if(spb){ spdToggle(spb); return; }
+  const aspk=e.target.closest('#autospk');
+  if(aspk){
+    autoSpk=!autoSpk;
+    aspk.textContent = autoSpk ? '\uD83D\uDD0A \u70B9\u8BCD\u53D1\u97F3\uFF1A\u5F00' : '\uD83D\uDD07 \u70B9\u8BCD\u53D1\u97F3\uFF1A\u5173';
+    aspk.classList.toggle('off', !autoSpk);
+    return;
+  }
+  const vmode=e.target.closest('#voiceMode');
+  if(vmode){
+    useNetVoice=!useNetVoice;
+    try{ localStorage.setItem('ttsMode', useNetVoice?'net':'local'); }catch(e){}
+    vmode.textContent = useNetVoice ? '\uD83C\uDF99 \u8BED\u97F3\uFF1A\u7F51\u7EDC' : '\uD83C\uDF99 \u8BED\u97F3\uFF1A\u672C\u673A';
+    return;
+  }
+  const w=e.target.closest('.w');
+  if(w){ if(autoSpk) speak(wordOf(w)); showWord(w.dataset.k, w.textContent); return }
+  const vi=e.target.closest('.vitem');
+  if(vi){ if(autoSpk) speak(wordOf(vi)); showWord(vi.dataset.k, vi.dataset.s); return }
+});
+backdrop.addEventListener('click',closeSheet);
+document.querySelectorAll('.chip[data-lv]').forEach(c=>c.addEventListener('click',()=>{
+  const lv=c.dataset.lv;c.classList.toggle('off');
+  document.getElementById('doc').classList.toggle('hide-'+lv, c.classList.contains('off'));
+}));
+/* ---- flashcards ---- */
+const FC = [{"w": "controversial", "p": ".kɒntrә'vә:ʃәl", "pos": "a.", "t": "争论的；论争的；被议论的", "ex": "The new road plan is controversial in our town.", "ex_zh": "这个新的修路计划在我们镇很有争议。", "phrase": false}, {"w": "drilling", "p": "'driliŋ", "pos": "n.", "t": "演练", "ex": "Drilling for oil can harm sea animals.", "ex_zh": "钻探石油可能会伤害海洋动物。", "phrase": false}, {"w": "opposition", "p": ".ɒpә'ziʃәn", "pos": "n.", "t": "反对；敌对；相反；在野党", "ex": "The plan met strong opposition from local people.", "ex_zh": "该计划遭到了当地居民的强烈反对。", "phrase": false}, {"w": "environmental", "p": "in.vaiәrәn'mentәl", "pos": "a.", "t": "周围的；环境的", "ex": "Environmental groups protect forests and rivers.", "ex_zh": "环保团体保护森林和河流。", "phrase": false}, {"w": "predicted", "p": "priˈdiktid", "pos": "v.", "t": "预言；预测；预示( predict的过去式和过去分词 )", "ex": "The weather report predicted rain for tomorrow.", "ex_zh": "天气预报预测明天会下雨。", "phrase": false}, {"w": "domestic", "p": "dәu'mestik", "pos": "a.", "t": "家庭的；国内的；驯养的", "ex": "Domestic flights are usually shorter than international ones.", "ex_zh": "国内航班通常比国际航班短。", "phrase": false}, {"w": "security", "p": "si'kjuriti", "pos": "n.", "t": "安全；安全性；防护物；保安；可靠性；担保人；抵押品；保证金", "ex": "Energy security matters most in cold winters.", "ex_zh": "能源安全在寒冷的冬天最重要。", "phrase": false}, {"w": "transition", "p": "træn'ziʃәn", "pos": "n.", "t": "转变；转换；变迁；过渡时期；临时转调", "ex": "The transition to online classes took some time.", "ex_zh": "向线上课程的过渡花了一些时间。", "phrase": false}, {"w": "renewable", "p": "ri'nju(:)әbl", "pos": "a.", "t": "可更新的；可恢复的；可继续的；可换新的；可重复的；可重说的", "ex": "Solar power is a kind of renewable energy.", "ex_zh": "太阳能是一种可再生能源。", "phrase": false}, {"w": "criticized", "p": "ˈkritisaizd", "pos": "vt.", "t": "批评(criticize的过去式)", "ex": "Many people criticized the plan for being too costly.", "ex_zh": "很多人批评这个计划成本太高。", "phrase": false}, {"w": "reliance", "p": "ri'laiәns", "pos": "n.", "t": "信任；信赖；受信赖的人(或事)", "ex": "Our reliance on cars makes traffic worse.", "ex_zh": "我们对汽车的依赖让交通更糟。", "phrase": false}, {"w": "infrastructure", "p": "'infrәstrʌktʃә", "pos": "n.", "t": "基础结构；基础设施", "ex": "Good roads are part of a country's infrastructure.", "ex_zh": "好的道路是一个国家基础设施的一部分。", "phrase": false}, {"w": "drive up", "p": "", "pos": "短语", "t": "推高", "ex": "The holiday season usually drives up hotel prices.", "ex_zh": "节假日通常会推高酒店价格。", "phrase": true}, {"w": "energy security", "p": "", "pos": "短语", "t": "能源安全", "ex": "Countries want energy security so that homes stay warm in winter.", "ex_zh": "各国都希望保障能源安全，这样冬天家里才能保持温暖。", "phrase": true}, {"w": "fossil fuel", "p": "", "pos": "短语", "t": "化石燃料", "ex": "Cars that burn fossil fuel add to air pollution.", "ex_zh": "燃烧化石燃料的汽车会加重空气污染。", "phrase": true}, {"w": "clean energy", "p": "", "pos": "短语", "t": "清洁能源", "ex": "Wind and solar are two common forms of clean energy.", "ex_zh": "风能和太阳能是两种常见的清洁能源。", "phrase": true}, {"w": "transition to", "p": "", "pos": "短语", "t": "向……过渡", "ex": "Our town is in transition to greener buses.", "ex_zh": "我们镇正在向更环保的公交车过渡。", "phrase": true}];
+let fcDeck=[], fcTotal=0;
+/* fcMode: 'en2zh' = see English, recall Chinese (recognition);
+   'zh2en' = see Chinese, say the English (production) */
+let fcMode='en2zh';
+try{fcMode=localStorage.getItem('fcMode')||'en2zh';}catch(e){}
+const fccard=document.getElementById('fccard');
+function fcShuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t}return a}
+function fcStart(){
+  fcDeck=fcShuffle(FC.map((c,i)=>i));
+  fcTotal=fcDeck.length;
+  const d=document.getElementById('fcdone'); d.setAttribute('hidden','');
+  fccard.style.display=''; document.getElementById('fcctl').style.display='';
+  fcShow();
+}
+function fcShow(){
+  fccard.classList.remove('flipped');
+  const c=FC[fcDeck[0]];
+  const pp=[]; if(c.p)pp.push('/'+c.p+'/'); if(c.pos)pp.push(c.pos);
+  if(fcMode==='zh2en'){
+    /* production mode: see Chinese, recall the English */
+    document.getElementById('fcw').textContent=c.t;
+    document.getElementById('fcp').textContent=c.pos||'';
+    document.getElementById('fct').textContent=c.w;
+  }else{
+    document.getElementById('fcw').textContent=c.w;
+    document.getElementById('fcp').textContent=c.p?'/'+c.p+'/':'';
+    document.getElementById('fct').textContent=c.t;
+  }
+  document.getElementById('fcpp').textContent=pp.join(' · ');
+  document.getElementById('fcex').textContent=c.ex?('e.g. '+c.ex):'';
+  document.getElementById('fcexzh').textContent=c.ex_zh||'';
+  document.getElementById('fcprog').textContent=
+    (fcTotal-fcDeck.length+1)+' / '+fcTotal+' · \u5269\u4F59 '+fcDeck.length;
+}
+function fcNext(known){
+  const cur=fcDeck.shift();
+  if(!known) fcDeck.push(cur);
+  if(!fcDeck.length){
+    fccard.style.display='none'; document.getElementById('fcctl').style.display='none';
+    const d=document.getElementById('fcdone'); d.removeAttribute('hidden');
+    d.querySelector('.fdmsg').textContent='\uD83C\uDF89 \u672C\u8F6E\u5B8C\u6210\uFF01\u5171 '+fcTotal+' \u4E2A\u5355\u8bcd/\u77ed\u8bed';
+    return;
+  }
+  fcShow();
+}
+if(fccard && FC.length){
+  fccard.addEventListener('click',e=>{
+    if(e.target.closest('#fcspk'))return;
+    fccard.classList.toggle('flipped');
+  });
+  document.getElementById('fcspk').addEventListener('click',e=>{e.stopPropagation();speak(FC[fcDeck[0]].w)});
+  document.getElementById('fcYes').addEventListener('click',()=>fcNext(true));
+  document.getElementById('fcNo').addEventListener('click',()=>fcNext(false));
+  document.getElementById('fcrestart').addEventListener('click',fcStart);
+  const fcmodeBtn=document.getElementById('fcmode');
+  const fcsub=document.getElementById('fcsub');
+  function fcRenderMode(){
+    const zh2en = fcMode==='zh2en';
+    fcmodeBtn.textContent = zh2en ? '\uD83D\uDD01 \u5207\u5230\u82F1\u2192\u6C49' : '\uD83D\uDD01 \u5207\u5230\u6C49\u2192\u82F1';
+    fcsub.childNodes[0].textContent = zh2en
+      ? '\u770B\u4E2D\u6587\u8BF4\u82F1\u6587\uFF0C\u70B9\u5361\u7247\u7FFB\u9762\u6838\u5BF9\uFF1B'
+      : '\u70B9\u5361\u7247\u7FFB\u9762\u770B\u91CA\u4E49\uFF1B';
+  }
+  if(fcmodeBtn){
+    fcRenderMode();
+    fcmodeBtn.addEventListener('click',()=>{
+      fcMode = fcMode==='en2zh' ? 'zh2en' : 'en2zh';
+      try{localStorage.setItem('fcMode',fcMode);}catch(e){}
+      fcRenderMode(); fcStart();
+    });
+  }
+  fcStart();
+}
+/* ---- quiz: semantic cloze ---- */
+document.querySelectorAll('.quiz').forEach(function(qz){
+  const qs=qz.querySelectorAll('.q'); let done=0, right=0;
+  const scoreEl=qz.querySelector('.qscore');
+  qs.forEach(function(q){
+    const ans=+q.dataset.ans;
+    q.querySelectorAll('.qo').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        if(q.dataset.done)return; q.dataset.done='1';
+        const pick=+btn.dataset.i, opts=q.querySelectorAll('.qo');
+        opts[ans].classList.add('ok');
+        if(pick===ans)right++; else btn.classList.add('bad');
+        q.querySelector('.qexp').hidden=false;
+        done++;
+        scoreEl.textContent = done===qs.length
+          ? ('本轮得分：'+right+' / '+qs.length+(right===qs.length?' \uD83C\uDF89 全对！':'，继续加油'))
+          : ('已答 '+done+' / '+qs.length+'，答对 '+right+' 题');
+      });
+    });
+  });
+});
+/* ---- trans: CN->EN reveal ---- */
+document.querySelectorAll('.tshow').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    const ans=btn.parentElement.querySelector('.tans');
+    ans.hidden=!ans.hidden;
+    btn.textContent=ans.hidden?'\u663E\u793A\u7B54\u6848':'\u6536\u8D77\u7B54\u6848';
+  });
+});
+/* ---- voice mode chip: reflect persisted choice on load ---- */
+try{
+  const vm0=document.getElementById('voiceMode');
+  if(vm0&&useNetVoice)vm0.textContent='\uD83C\uDF99 \u8BED\u97F3\uFF1A\u7F51\u7EDC';
+}catch(e){}
+/* ---- speed timer: show historical best on load ---- */
+try{
+  const hist=JSON.parse(localStorage.getItem('readSpeed')||'[]');
+  if(hist.length){
+    const best=Math.max.apply(null,hist.map(function(h){return h.w;}));
+    document.querySelectorAll('.speed-res').forEach(function(r){
+      r.textContent='\u5386\u53F2\u6700\u4F73 '+best+' \u8BCD/\u5206';
+    });
+  }
+}catch(e){}
+</script>
+</body></html>
