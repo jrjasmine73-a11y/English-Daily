@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AM · 爱 · Unit 1 词根精学</title><style>
+body{margin:0;background:#f2f3f5;color:#23272e;font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+a{color:#38618c;text-decoration:none}
+.hero{background:linear-gradient(120deg,#163a5f,#1c6e6a);color:#fff;padding:44px 20px 38px;text-align:center;position:relative}
+.hero h1{font-size:32px;margin:6px 0 8px;font-family:Georgia,"Songti SC",serif}
+.hero p{opacity:.92;margin:4px 0;font-size:15px}
+.btn{display:inline-block;background:#fff;color:#17615c;font-weight:700;border-radius:26px;padding:10px 30px;margin-top:14px;font-size:16px}
+.wrap{max-width:1020px;margin:0 auto;padding:16px 14px 60px}
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+.feat{background:#fff;border-radius:12px;padding:14px 18px;box-shadow:0 1px 4px rgba(30,50,80,.07)}
+.feat b{font-size:16px}.feat span{display:block;color:#7c8594;font-size:13.5px}
+.unithead{display:flex;align-items:baseline;gap:10px;margin:26px 2px 10px}
+.unithead h2{font-size:21px;margin:0}.unithead .prog{color:#7c8594;font-size:13.5px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.grid{grid-template-columns:1fr}.feats{grid-template-columns:1fr 1fr}}
+.rcard{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(30,50,80,.09)}
+.rcard .cov{height:170px;background-size:cover;background-position:center;position:relative}
+.rcard .lettercov{height:170px;display:flex;align-items:center;justify-content:center;color:#fff;font-family:Georgia,serif;position:relative}
+.rcard .lettercov span{font-size:44px;letter-spacing:2px;text-shadow:0 2px 8px rgba(0,0,0,.25)}
+.tag{position:absolute;top:10px;left:10px;background:rgba(20,30,45,.72);color:#fff;font-size:12px;border-radius:6px;padding:1px 9px}
+.state{position:absolute;top:10px;right:10px;background:#2e9e62;color:#fff;font-size:12px;border-radius:6px;padding:1px 9px}
+.state.mid{background:#d99a26}.state.todo{background:rgba(20,30,45,.55)}
+.rcard .body{padding:12px 16px 16px}
+.rcard .t{font-size:18.5px;font-weight:700;color:#23272e}
+.rcard .meta{color:#7c8594;font-size:13px;margin:2px 0}
+.rcard .words{color:#4a5568;font-size:14px}
+.urow{background:#fff;border-radius:10px;padding:10px 16px;margin-top:10px;display:flex;gap:12px;align-items:baseline;box-shadow:0 1px 3px rgba(30,50,80,.05)}
+.uchip{background:#eef3f8;color:#38618c;border-radius:8px;padding:0 10px;font-weight:700;white-space:nowrap}
+.urow .r{color:#5a6577;font-size:13.5px}.urow .st{margin-left:auto;color:#9aa3b2;font-size:13px;white-space:nowrap}
+.menuBtn{position:fixed;top:14px;right:14px;z-index:60;width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.16);color:#fff;font-size:21px;cursor:pointer;backdrop-filter:blur(4px)}
+.menuBtn.dark{background:#fff;color:#333;border-color:#d5dbe4;box-shadow:0 2px 8px rgba(30,50,80,.15)}
+.drawer{position:fixed;top:0;right:-330px;width:310px;max-width:86vw;height:100%;background:#fff;z-index:70;box-shadow:-4px 0 18px rgba(20,40,70,.2);transition:right .25s;overflow-y:auto;padding:18px}
+.drawer.open{right:0}
+.drawer h3{margin:4px 0 10px}
+.drawer details{border-bottom:1px solid #eef1f5;padding:7px 0}
+.drawer summary{cursor:pointer;font-weight:600}
+.drawer .rl{display:block;padding:3px 0 3px 16px;font-size:14.5px}
+.drawer .rl.off{color:#a7b0bf}
+.drawer .x{float:right;border:none;background:none;font-size:20px;cursor:pointer}
+.mask{position:fixed;inset:0;background:rgba(15,25,40,.35);z-index:65;display:none}.mask.on{display:block}
+section.blk{background:#fff;border-radius:12px;padding:18px 22px;margin-top:16px;box-shadow:0 1px 4px rgba(30,50,80,.06)}
+section.blk h2{font-size:20px;border-bottom:1px solid #edf0f3;padding-bottom:6px;font-family:Georgia,"Songti SC",serif}
+.en{font-family:Georgia,serif;font-size:16.5px}
+.zh2{color:#6d5c44}.trans{display:none;background:#faf5ea;border-left:3px solid #d9c9a3;padding:8px 12px;margin:8px 0}
+.trans.show{display:block}
+button.tbtn{background:#efe6d2;border:1px solid #d9c9a3;border-radius:14px;padding:1px 12px;font-size:13px;cursor:pointer}
+.card{border:1px solid #e8edf2;border-radius:10px;padding:14px 18px;margin:14px 0;background:#fff}
+.card h3{margin:2px 0 8px;font-size:19px}
+.w{color:#b3392e;cursor:pointer;text-decoration:underline dotted}
+.ph{color:#8a7a5f;font-size:14px}.pos{color:#38618c;font-size:14px}
+.tier{font-size:12px;border-radius:10px;padding:1px 9px;color:#fff;background:#b3392e}
+.bd{font-family:Georgia,serif}.be{background:#faf5ea;padding:8px 12px;border-radius:6px;font-size:15px}
+.note{color:#5d5142}.spell{color:#8c5a00}
+.mines{background:#f4f8f1;border-radius:6px;padding:8px 14px}.minet{font-weight:600;margin:4px 0}.mine{margin:6px 0}
+img.pic{width:100%;border-radius:10px}
+table.sc{width:100%;border-collapse:collapse;font-size:15px}table.sc td{border-bottom:1px solid #eef1f5;padding:6px 4px}
+details.ans{background:#faf5ea;border-radius:6px;padding:8px 14px;margin:8px 0}
+.lite{background:#fdf1ec;border:1px solid #eec9c0;border-radius:12px;padding:18px 22px;margin-top:16px}
+.crumbs{color:#7c8594;font-size:14px;margin:12px 2px 0}
+.roothead{background:#fff;border-radius:12px;padding:20px 22px;margin-top:12px;box-shadow:0 1px 4px rgba(30,50,80,.06)}
+.roothead .big{font-family:Georgia,serif;font-size:36px;color:#163a5f}
+.wchip{display:inline-block;background:#eef3f8;border-radius:16px;padding:1px 12px;margin:2px 4px 2px 0;font-size:14px}
+.pn{display:flex;justify-content:space-between;margin-top:18px}
+.pn a{background:#fff;border-radius:10px;padding:10px 18px;box-shadow:0 1px 4px rgba(30,50,80,.08)}
+.pn span{background:#f0f2f5;color:#9aa3b2;border-radius:10px;padding:10px 18px}
+video{width:100%;border-radius:10px;background:#000}
+.small{font-size:13.5px;color:#7c8594}
+</style></head><body>
+<button class="menuBtn dark" onclick="openMenu()">☰</button><div class="mask" id="mask" onclick="closeMenu()"></div><div class="drawer" id="drawer"><button class="x" onclick="closeMenu()">✕</button><h3>📚 单元分类</h3><p class="small">点开单元看词根；带链接的是已上线词根，其余陆续制作中。</p><details open><summary>Unit 1</summary><a class="rl" href="../unit-01/bene.html">BENE · 好</a><a class="rl" href="../unit-01/am.html">AM · 爱</a><span class="rl off">BELL</span><span class="rl off">PAC</span><span class="rl off">CRIM</span><span class="rl off">PROB</span><span class="rl off">GRAV</span><span class="rl off">LEV</span><span class="rl off">★ Words from Mythology and History</span></details><details><summary>Unit 2</summary><span class="rl off">MANIA</span><span class="rl off">PSYCH</span><span class="rl off">CEPT</span><span class="rl off">FIN</span><span class="rl off">JECT</span><span class="rl off">TRACT</span><span class="rl off">DUC/DUCT</span><span class="rl off">SEQU</span><span class="rl off">★ Words from Mythology</span></details><details><summary>Unit 3</summary><span class="rl off">AMBI</span><span class="rl off">EPI</span><span class="rl off">HYP/HYPO</span><span class="rl off">THERM/THERMO</span><span class="rl off">POLY</span><span class="rl off">PRIM</span><span class="rl off">HOM/HOMO</span><span class="rl off">DIS</span><span class="rl off">★ Latin Borrowings</span></details><details><summary>Unit 4</summary><span class="rl off">VOR</span><span class="rl off">CARN</span><span class="rl off">CRED</span><span class="rl off">FID</span><span class="rl off">CURR/CURS</span><span class="rl off">PED</span><span class="rl off">FLECT</span><span class="rl off">POST</span><span class="rl off">★ Words from Mythology</span></details><details><summary>Unit 5</summary><span class="rl off">MAL</span><span class="rl off">CATA</span><span class="rl off">PROT/PROTO</span><span class="rl off">ANTE</span><span class="rl off">ORTHO</span><span class="rl off">RECT</span><span class="rl off">EU</span><span class="rl off">DYS</span><span class="rl off">★ Latin Borrowings</span></details><details><summary>Unit 6</summary><span class="rl off">EQU</span><span class="rl off">QUIS</span><span class="rl off">PLE/PLEN</span><span class="rl off">METR/METER</span><span class="rl off">AUD</span><span class="rl off">SON</span><span class="rl off">ERR</span><span class="rl off">CED</span><span class="rl off">★ Words from Mythology and History</span></details><details><summary>Unit 7</summary><span class="rl off">VIS</span><span class="rl off">SPECT</span><span class="rl off">VOC</span><span class="rl off">PHON</span><span class="rl off">CUR</span><span class="rl off">PERI</span><span class="rl off">SENS</span><span class="rl off">SOPH</span><span class="rl off">★ Words from Mythology and History</span></details><details><summary>Unit 8</summary><span class="rl off">PORT</span><span class="rl off">PEND</span><span class="rl off">PAN</span><span class="rl off">EXTRA</span><span class="rl off">PHOT</span><span class="rl off">LUC</span><span class="rl off">MOR/MORT</span><span class="rl off">TROPH</span><span class="rl off">★ Words from Mythology and History</span></details><details><summary>Unit 9</summary><span class="rl off">HER</span><span class="rl off">FUG</span><span class="rl off">COSM</span><span class="rl off">SCI</span><span class="rl off">JUNCT</span><span class="rl off">PART</span><span class="rl off">MIS</span><span class="rl off">PEL</span><span class="rl off">★ Words from Mythology</span></details><details><summary>Unit 10</summary><span class="rl off">PUT</span><span class="rl off">LOG</span><span class="rl off">TERR</span><span class="rl off">MAR</span><span class="rl off">PATH</span><span class="rl off">PEN/PUN</span><span class="rl off">MATR/MATER</span><span class="rl off">AQU</span><span class="rl off">★ Words from Mythology</span></details><details><summary>Unit 11</summary><span class="rl off">CANT</span><span class="rl off">LINGU</span><span class="rl off">SPIR</span><span class="rl off">VER</span><span class="rl off">TURB</span><span class="rl off">VOLU/VOLV</span><span class="rl off">FAC</span><span class="rl off">LUM</span><span class="rl off">★ Words from Mythology and History</span></details><details><summary>Unit 12</summary><span class="rl off">UMBR</span><span class="rl off">VEST</span><span class="rl off">THE/THEO</span><span class="rl off">ICON</span><span class="rl off">URB</span><span class="rl off">CULT</span><span class="rl off">DEM/DEMO</span><span class="rl off">POPUL</span><span class="rl off">★ Animal Words</span></details><details><summary>Unit 13</summary><span class="rl off">CORD</span><span class="rl off">CULP</span><span class="rl off">DICT</span><span class="rl off">GNI/GNO</span><span class="rl off">GRAPH</span><span class="rl off">ART</span><span class="rl off">FORT</span><span class="rl off">CIS</span><span class="rl off">★ Animal Words</span></details><details><summary>Unit 14</summary><span class="rl off">CRYPT</span><span class="rl off">AB/ABS</span><span class="rl off">PED</span><span class="rl off">TROP</span><span class="rl off">NEO</span><span class="rl off">NOV</span><span class="rl off">POS</span><span class="rl off">TEN</span><span class="rl off">MONO</span><span class="rl off">UNI</span><span class="rl off">★ Number Words</span></details><details><summary>Unit 15</summary><span class="rl off">TERM/TERMIN</span><span class="rl off">GEO</span><span class="rl off">SPHER</span><span class="rl off">VERT</span><span class="rl off">MORPH</span><span class="rl off">FORM</span><span class="rl off">DOC/DOCT</span><span class="rl off">TUT/TUI</span><span class="rl off">DI/DUP</span><span class="rl off">BI/BIN</span><span class="rl off">★ Number Words</span></details><details><summary>Unit 16</summary><span class="rl off">TOP</span><span class="rl off">CENTR/CENTER</span><span class="rl off">DOM</span><span class="rl off">OMNI</span><span class="rl off">HOL/HOLO</span><span class="rl off">RETRO</span><span class="rl off">TEMPOR</span><span class="rl off">CHRON</span><span class="rl off">TRI</span><span class="rl off">★ Number Words</span></details><details><summary>Unit 17</summary><span class="rl off">ANIM</span><span class="rl off">FIG</span><span class="rl off">ANN/ENN</span><span class="rl off">EV</span><span class="rl off">CORP</span><span class="rl off">TANG/TACT</span><span class="rl off">CODI/CODE</span><span class="rl off">SIGN</span><span class="rl off">QUADR/QUART</span><span class="rl off">TETR</span><span class="rl off">★ Number Words</span></details><details><summary>Unit 18</summary><span class="rl off">CAPIT</span><span class="rl off">ANTHROP</span><span class="rl off">KINE</span><span class="rl off">DYNAM</span><span class="rl off">GRAD</span><span class="rl off">REG</span><span class="rl off">CRIT</span><span class="rl off">JUR</span><span class="rl off">PENT</span><span class="rl off">QUINT</span><span class="rl off">★ Number Words</span></details><details><summary>Unit 19</summary><span class="rl off">BIO</span><span class="rl off">GEN</span><span class="rl off">FUNCT</span><span class="rl off">MUT</span><span class="rl off">FRACT</span><span class="rl off">TELE</span><span class="rl off">PHIL</span><span class="rl off">NEG</span><span class="rl off">DEC</span><span class="rl off">CENT</span><span class="rl off">★ Number Words</span></details><details><summary>Unit 20</summary><span class="rl off">NOM</span><span class="rl off">PATER/PATR</span><span class="rl off">LEGA</span><span class="rl off">GREG</span><span class="rl off">FLU</span><span class="rl off">PREHEND/PREHENS</span><span class="rl off">TEMPER</span><span class="rl off">PURG</span><span class="rl off">MILL</span><span class="rl off">HEMI/SEMI</span><span class="rl off">★ Number Words</span></details><details><summary>Unit 21</summary><span class="rl off">SUB</span><span class="rl off">HYPER</span><span class="rl off">PRE</span><span class="rl off">PARA</span><span class="rl off">META</span><span class="rl off">PER</span><span class="rl off">ANT/ANTI</span><span class="rl off">CONTRA</span><span class="rl off">★ Greek and Latin Borrowings</span></details><details><summary>Unit 22</summary><span class="rl off">ACER/ACR</span><span class="rl off">STRICT</span><span class="rl off">STRU/STRUCT</span><span class="rl off">PROP/PROPRI</span><span class="rl off">TORT</span><span class="rl off">VIV</span><span class="rl off">SERV</span><span class="rl off">CLUS</span><span class="rl off">★ Greek and Latin Borrowings</span></details><details><summary>Unit 23</summary><span class="rl off">TEXT</span><span class="rl off">PLAC</span><span class="rl off">AUT/AUTO</span><span class="rl off">GRAT</span><span class="rl off">CLAM/CLAIM</span><span class="rl off">CRAC/CRAT</span><span class="rl off">PUNC</span><span class="rl off">POT</span><span class="rl off">★ Greek and Latin Borrowings</span></details><details><summary>Unit 24</summary><span class="rl off">MAND</span><span class="rl off">UND</span><span class="rl off">SANCT</span><span class="rl off">LOQU</span><span class="rl off">VIR</span><span class="rl off">VAL</span><span class="rl off">CRE/CRET</span><span class="rl off">FUS</span><span class="rl off">★ Greek and Latin Borrowings</span></details><details><summary>Unit 25</summary><span class="rl off">VERB</span><span class="rl off">SIMIL/SIMUL</span><span class="rl off">SCEND</span><span class="rl off">ONYM</span><span class="rl off">SCRIB/SCRIP</span><span class="rl off">FALL</span><span class="rl off">SOLU</span><span class="rl off">HYDR</span><span class="rl off">★ Greek and Latin Borrowings</span></details><details><summary>Unit 26</summary><span class="rl off">MUR</span><span class="rl off">POLIS/POLIT</span><span class="rl off">NUMER</span><span class="rl off">KILO</span><span class="rl off">MICRO</span><span class="rl off">MULTI</span><span class="rl off">PAR</span><span class="rl off">PHOB</span><span class="rl off">HEM/HEMO</span><span class="rl off">ITIS</span><span class="rl off">★ Medical Words</span></details><details><summary>Unit 27</summary><span class="rl off">NANO</span><span class="rl off">SUPER</span><span class="rl off">DE</span><span class="rl off">NUL/NULL</span><span class="rl off">ARM</span><span class="rl off">SURG</span><span class="rl off">STRAT</span><span class="rl off">LATER</span><span class="rl off">TOM</span><span class="rl off">IATR</span></details><details><summary>Unit 28</summary><span class="rl off">MEDI</span><span class="rl off">OID</span><span class="rl off">SCOP</span><span class="rl off">TRANS</span><span class="rl off">PRO</span><span class="rl off">RE</span><span class="rl off">DERM</span><span class="rl off">ENDO</span></details><details><summary>Unit 29</summary><span class="rl off">NECRO</span><span class="rl off">PALEO</span><span class="rl off">CIRCU/CIRCUM</span><span class="rl off">MINI/MINU</span><span class="rl off">INTER</span><span class="rl off">SUR</span><span class="rl off">CO</span><span class="rl off">SYN</span><span class="rl off">★ Words from Mythology and History</span></details><details><summary>Unit 30</summary><span class="rl off">TOXI</span><span class="rl off">TEN/TENU</span><span class="rl off">TECHNI/TECHNO</span><span class="rl off">LONG</span><span class="rl off">IDIO</span><span class="rl off">AER/AERO</span><span class="rl off">CAD</span><span class="rl off">TRIB</span><span class="rl off">★ Words from Mythology and History</span></details></div>
+<div class="wrap">
+<p class="crumbs"><a href="../index.html">词汇课首页</a> › Unit 1 › <b>AM</b></p>
+<div class="roothead"><div class="big">AM <span style="font-size:19px;color:#7c8594">= love · 爱</span></div>
+<p class="meta small">Unit 1 · 词根 2/9 · 2026年11月9日 · 今天精学 4 个词，全部要求会默写、会造句</p>
+<div><span class="wchip">amicable</span><span class="wchip">enamored</span><span class="wchip">amorous</span><span class="wchip">paramour</span></div></div>
+<section class="blk"><h2>📖 原书原文 · 词根导读</h2>
+<p class="en">AM comes from the Latin amare, “to love.” The Roman god of love was known by two different names, Cupid and Amor. Amiable means “friendly or good-natured,” and amigo is Spanish for “friend.”</p><button class="tbtn">译文</button><div class="trans">AM 来自拉丁语 amare，「爱」。罗马的爱神有两个名字：丘比特（Cupid）和阿莫尔（Amor）。amiable 是「友善、和气」的意思，amigo 在西班牙语里就是「朋友」。</div>
+<p>AM 一家都跟「爱」有关，但火候完全不同：amicable 是没火花的友善，enamored 是被迷住，amorous 是火花四溅，paramour 是见不得光的那种爱。今天用一张四格漫画把四种火候一次分清。</p></section>
+<section class="blk"><h2>🖼️ 搞笑图 · 四格漫画分清四种「爱」</h2>
+<img class="pic" src="../assets/am-comic.webp" alt="AM 家族四格漫画"></section>
+<section class="blk"><h2>🔍 逐词精讲</h2><div class="card">
+<h3><span class="w" onclick="spk('amicable')">amicable</span> <span class="ph">/ˈæmɪkəb(ə)l/</span> <span class="pos">adj. 形容词</span> <span class="tier">精学 · 会默写会用</span> 🔊</h3>
+<p class="bd">Friendly, peaceful.<br><span class="zh2">友好的；和平（解决）的。</span></p>
+<p class="be">原书例句：Their relations with their in-laws were generally amicable, despite some bickering during the holidays.<br><span class="zh2">他们和亲家之间的关系总体上很友好，尽管节假日里偶有拌嘴。</span></p>
+<p class="note">原书小知识：最经典的搭配是 amicable settlement（友好和解）和 amicable meeting；原书还提到美国和加拿大以两国间最长的不设防边境为傲——那就是国家版的 amicable。</p><p>钩子：AM 家族里「有爱但没火花」的那个——吵过架还能握手言和。</p><p>💡 场合：离婚、邻里纠纷、商业谈判和平收场时的头号用词；说朋友关系好一般用 friendly。</p><p>写作：纠纷、谈判类作文替换 friendly，立刻专业。</p><p class="spell">✏️ 拼写：a-mi-ca-ble，只有一个 m，别受 amiable（和蔼可亲，拼法不同）干扰。</p>
+<div class="mines"><p class="minet">我的生活例句：</p><p class="mine">▸ After a long talk, my neighbour and I found an amicable solution to the noise problem.<br><span class="zh2">长谈之后，我和邻居友好地解决了噪音问题。</span></p><p class="mine">▸ They reached an amicable divorce, with no fights over money.<br><span class="zh2">他们和平离婚，没有为钱争吵。</span></p></div></div><div class="card">
+<h3><span class="w" onclick="spk('enamored')">enamored</span> <span class="ph">/ɪˈnæmərd/</span> <span class="pos">adj. 形容词</span> <span class="tier">精学 · 会默写会用</span> 🔊</h3>
+<p class="bd">Charmed or fascinated; inflamed with love.<br><span class="zh2">被迷住的；倾心的；热恋的。</span></p>
+<p class="be">原书例句：Rebecca quickly became enamored of the town’s rustic surroundings, its slow pace, and its eccentric characters.<br><span class="zh2">丽贝卡很快就迷上了这个小镇的田园风光、慢节奏，还有镇上那些古怪的人。</span></p>
+<p class="note">原书小知识：enamored 后面接 of 和 with 都可以；它还常出现在否定句里——not enamored of the new boss，意思就是「对新老板并不买账」。</p><p>钩子：四格漫画第 2 格那个眼睛变爱心、抱着一大束花的小伙子。</p><p>💡 场合：不只迷恋人，还能迷恋城市、爱好、新点子；新闻评论里带一点调侃味。</p><p>写作：替换 obsessed with，但语气是正面的着迷，不带病态。</p><p class="spell">✏️ 拼写：e-na-mored；美式拼法 enamored，英式 enamoured 多一个 u，本书用美式。</p>
+<div class="mines"><p class="minet">我的生活例句：</p><p class="mine">▸ My child is completely enamored of the little toy train.<br><span class="zh2">我家娃彻底迷上了那列小玩具火车。</span></p><p class="mine">▸ Honestly, I am not enamored of the new timetable.<br><span class="zh2">说实话，我对新课表并不感冒。</span></p></div></div><div class="card">
+<h3><span class="w" onclick="spk('amorous')">amorous</span> <span class="ph">/ˈæmərəs/</span> <span class="pos">adj. 形容词</span> <span class="tier">精学 · 会默写会用</span> 🔊</h3>
+<p class="bd">Having or showing strong feelings of attraction or love.<br><span class="zh2">含情的；示爱的；恋爱的。</span></p>
+<p class="be">原书例句：It turned out that the amorous Congressman had gotten his girlfriend a good job and was paying for her apartment.<br><span class="zh2">原来那位风流议员给他的女朋友安排了一份好工作，还替她付着公寓的租金。</span></p>
+<p class="note">原书小知识：小报记者挖到名人丑闻照片时最爱用这个词，amorous pair（那对风流鸳鸯），满满的讽刺味。</p><p>钩子：amicable 没火花，amorous 全是火花——四格漫画第 3 格长椅上那一对。</p><p>💡 场合：文学描写、八卦新闻；形容情侣亲密。千万别用来形容亲子、师生关系。</p><p>写作：写言情、故事时用；正式议论文里慎用。</p><p class="spell">✏️ 拼写：a-mo-rous；小心别和 amoral（不道德的）看混，就差一个字母。</p>
+<div class="mines"><p class="minet">我的生活例句：</p><p class="mine">▸ The amorous couple on the bus seemed to notice nobody else.<br><span class="zh2">公交车上那对黏糊糊的情侣，好像眼里根本没有别人。</span></p></div></div><div class="card">
+<h3><span class="w" onclick="spk('paramour')">paramour</span> <span class="ph">/ˈpærəmʊə(r)/</span> <span class="pos">n. 名词</span> <span class="tier">精学 · 会默写会用</span> 🔊</h3>
+<p class="bd">A lover, often secret, not allowed by law or custom.<br><span class="zh2">情人；尤指秘密的、不为法律或习俗所容的情夫/情妇。</span></p>
+<p class="be">原书例句：He had been coming to the house for two years before her brothers realized that he was actually the paramour of their shy and withdrawn sister.<br><span class="zh2">他往这所房子跑了两年，她的哥哥们才意识到，他其实是他们那个害羞内向的妹妹的情人。</span></p>
+<p class="note">原书小知识：这个词来自法语 par amour（因爱），有意思的是，现代法国人自己已经不用这个词了。</p><p>钩子：四格漫画第 4 格——躲在窗帘后面、攥着玫瑰的神秘男人。</p><p>💡 场合：小说、狗血剧、丑闻新闻专用，贬义拉满；写正常男朋友用它就是事故现场。</p><p>写作：只在故事、历史题材里用。</p><p class="spell">✏️ 拼写：pa-ra-mour，结尾 -mour；来自法语 amour（爱）。</p>
+<div class="mines"><p class="minet">我的生活例句：</p><p class="mine">▸ In the TV drama, the rich businessman keeps his paramour in another city.<br><span class="zh2">电视剧里，那个富商把情人安置在另一座城市。</span></p></div></div></section>
+<section class="blk"><h2>😂 段子串记</h2>
+<p>图书管理员和镇长原本吵得不可开交，最后达成了 <b>amicable</b> settlement——因为镇长发现自己 <b>enamored</b> of 管理员的藏书室，天天往那儿跑，还总投去 <b>amorous</b> glances，镇民们都在八卦：他是不是想当她的 <b>paramour</b>？镇长夫人听了直摆手：他呀，就是想蹭书看。</p></section>
+<section class="blk"><h2>🗂️ 使用场景梳理</h2>
+<table class="sc">
+<tr><td>离婚、邻里纠纷、谈判和平收场</td><td><b>amicable</b> 友好的、和平解决的</td></tr>
+<tr><td>迷上新爱好、新城市、新手机</td><td><b>enamored</b> of/with 着迷的</td></tr>
+<tr><td>言情小说、情侣约会描写</td><td><b>amorous</b> 含情的</td></tr>
+<tr><td>狗血剧、名人丑闻</td><td><b>paramour</b> 秘密情人（贬义）</td></tr></table></section>
+<section class="blk"><h2>✍️ 小测 + 拼写听写</h2>
+<p>1. The couple reached an ______ divorce, with no fights over money.<br>
+2. My child is completely ______ of the little toy train.<br>
+3. The ______ couple on the bus seemed to notice nobody else.<br>
+4. In the drama, nobody knew the manager had a ______ in another city.</p>
+<p>听写（看中文写英文）：① 友好的、和平解决的 ② 着迷的 ③ 含情的 ④ 秘密情人</p>
+<details class="ans"><summary>点开对答案</summary><p>1. amicable　2. enamored　3. amorous　4. paramour<br>听写：① amicable　② enamored　③ amorous　④ paramour</p></details>
+<p><b>活用 30 秒：</b>出声说一句自己的真事，比如 <i>I am not enamored of getting up at five in the morning.</i> 说完发给我。</p></section>
+<div class="lite"><h2>⏱️ 3 分钟保底版</h2><p>看四格漫画 → 读段子 → 做小测第 1 题，就算今天打卡。</p></div>
+<div class="pn"><a href="bene.html">← 上一个词根：BENE（好）</a><span>下一个词根：BELL（战争）· 制作中</span></div>
+</div><script>
+function tg(){document.querySelectorAll('.tbtn').forEach(function(b){b.addEventListener('click',function(){var t=b.nextElementSibling;if(t)t.classList.toggle('show');});});}
+function spk(t){try{var u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=0.92;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
+function openMenu(){document.getElementById('drawer').classList.add('open');document.getElementById('mask').classList.add('on');}
+function closeMenu(){document.getElementById('drawer').classList.remove('open');document.getElementById('mask').classList.remove('on');}
+tg();
+</script></body></html>
