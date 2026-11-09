@@ -92,7 +92,8 @@ video{width:100%;border-radius:10px;background:#000}
 <p class="small" style="margin-top:22px">设计定稿中：栏目和版式会根据学习体验继续调整，定稿后再开启每日推送。旧的 Lesson 1 合辑页（BENE+AM 合在一页）已被上面两个独立词根页取代。</p>
 </div><script>
 function tg(){document.querySelectorAll('.tbtn').forEach(function(b){b.addEventListener('click',function(){var t=b.nextElementSibling;if(t)t.classList.toggle('show');});});}
-function spk(t){try{var u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=0.92;speechSynthesis.cancel();speechSynthesis.speak(u);}catch(e){}}
+function ydPlay(t){try{var a=new Audio('https://dict.youdao.com/dictvoice?audio='+encodeURIComponent(t)+'&type=2');a.play();}catch(e){}}
+function spk(t){var done=false;try{if('speechSynthesis' in window){var u=new SpeechSynthesisUtterance(t);u.lang='en-US';u.rate=0.92;u.onstart=function(){done=true;};speechSynthesis.cancel();speechSynthesis.speak(u);setTimeout(function(){if(!done){ydPlay(t);}},1100);}else{ydPlay(t);}}catch(e){ydPlay(t);}}
 function openMenu(){document.getElementById('drawer').classList.add('open');document.getElementById('mask').classList.add('on');}
 function closeMenu(){document.getElementById('drawer').classList.remove('open');document.getElementById('mask').classList.remove('on');}
 tg();
