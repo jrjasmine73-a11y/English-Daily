@@ -2,7 +2,7 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>每日英语精读 · 热点新闻学英语</title>
-<meta name="description" content="每天三篇热点新闻英语精读：点词查义发音、四级六级雅思托福分级、生词表、段落译文。">
+<meta name="description" content="每天一篇热点新闻英语精读：点词查义发音、四级六级雅思托福分级、生词表、段落译文。">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
@@ -78,8 +78,9 @@ border:1px solid #fca5a5;border-radius:14px;padding:3px 12px;cursor:pointer}
 <div class="topbar">
 <button class="menuBtn" id="menuBtn" aria-label="菜单">☰</button>
 <h1>📖 每日英语精读</h1>
-<p>每天三篇当天热点新闻，中等难度 · 点词查义听发音 · 四级 / 六级 / 雅思 / 托福分级</p>
+<p>每天一篇当天热点新闻，中等难度 · 点词查义听发音 · 四级 / 六级 / 雅思 / 托福分级</p>
 <a class="today" href="daily/2026-11-09.html">开始今日精读</a><a class="wlink" href="weekly/weekly-2026-W46.html">📅 本周表达回顾 →</a>
+<div style="margin-top:12px"><a class="wlink" href="vocab/" style="margin-left:0">📗 韦小绿词汇精学 →</a></div>
 </div>
 <div class="feats">
 <div class="feat"><b>👆 点词即查</b><span>释义、音标、自动发音</span></div>
@@ -128,7 +129,7 @@ document.getElementById('clearfilter').addEventListener('click',function(){
 });
 })();
 document.getElementById('shareBtn').addEventListener('click', async ()=>{
-  const data={title:'每日英语精读', text:'每天三篇热点新闻，点词查义听发音，学英语', url:location.href};
+  const data={title:'每日英语精读', text:'每天一篇热点新闻，点词查义听发音，学英语', url:location.href};
   if(navigator.share){ try{ await navigator.share(data) }catch(e){} }
   else{ try{ await navigator.clipboard.writeText(location.href); alert('链接已复制，去分享吧！') }catch(e){ alert(location.href) } }
 });
