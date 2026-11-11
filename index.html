@@ -2,11 +2,28 @@
 <html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>每日英语精读 · 热点新闻学英语</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('erdTheme')||'paper'}catch(e){}</script>
 <meta name="description" content="每天一篇热点新闻英语精读：点词查义发音、四级六级雅思托福分级、生词表、段落译文。">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
+:root{--tbg:#e8e2d6;--tpaper:#f4f4f5}
+html{background:var(--tbg)}
+html[data-theme="cream"]{--tbg:#eadfc6;--tpaper:#fdf6e0}
+html[data-theme="mint"]{--tbg:#cfe7d8;--tpaper:#f1f9f3}
+html[data-theme="sky"]{--tbg:#cfdff0;--tpaper:#f3f8fd}
+html[data-theme="rose"]{--tbg:#eed2d6;--tpaper:#fdf3f4}
+html[data-theme="lav"]{--tbg:#d8d0ee;--tpaper:#f7f5fd}
+html[data-theme="peach"]{--tbg:#f2d7bf;--tpaper:#fdf5ea}
+html[data-theme="night"]{--tbg:#101114;--tpaper:#f4f4f5}
+#themeBtn{position:fixed;right:14px;bottom:14px;z-index:60;width:46px;height:46px;border-radius:50%;border:1px solid rgba(0,0,0,.12);background:#fff;font-size:21px;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.22)}
+#themePanel{position:fixed;right:14px;bottom:68px;z-index:60;background:#fff;border:1px solid #e7e5e4;border-radius:14px;padding:10px 12px;box-shadow:0 10px 30px rgba(0,0,0,.25);display:none;max-width:248px}
+#themePanel.open{display:block}
+#themePanel .tp-t{font-size:12px;color:#57534e;margin-bottom:8px}
+#themePanel .tp-row{display:flex;flex-wrap:wrap;gap:8px}
+.tdot{width:34px;height:34px;border-radius:50%;border:2px solid rgba(0,0,0,.14);cursor:pointer;padding:0}
+.tdot.on{border-color:#c0392b;transform:scale(1.1)}
 body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
-background:#f4f4f5;color:#1c1917;line-height:1.7;max-width:900px;margin:0 auto;overflow-x:hidden}
+background:var(--tbg);color:#1c1917;line-height:1.7;max-width:900px;margin:0 auto;overflow-x:hidden}
 .topbar{background:linear-gradient(135deg,#1e3a5f,#0f766e);color:#fff;
 width:100vw;margin-left:calc(50% - 50vw);padding:36px 20px 32px;text-align:center}
 .topbar h1{font-size:26px;margin-bottom:6px}
@@ -139,5 +156,25 @@ document.getElementById('shareBtn').addEventListener('click', async ()=>{
   if(navigator.share){ try{ await navigator.share(data) }catch(e){} }
   else{ try{ await navigator.clipboard.writeText(location.href); alert('链接已复制，去分享吧！') }catch(e){ alert(location.href) } }
 });
+</script>
+<button id="themeBtn" title="背景颜色">🎨</button>
+<div id="themePanel"><div class="tp-t">背景颜色（选一次，整站记住）</div><div class="tp-row">
+<button class="tdot" data-t="paper" style="background:#fafaf9" title="纸白"></button>
+<button class="tdot" data-t="cream" style="background:#fdf6e0" title="奶油黄"></button>
+<button class="tdot" data-t="mint" style="background:#f1f9f3" title="薄荷绿"></button>
+<button class="tdot" data-t="sky" style="background:#f3f8fd" title="雾蓝"></button>
+<button class="tdot" data-t="rose" style="background:#fdf3f4" title="藕粉"></button>
+<button class="tdot" data-t="lav" style="background:#f7f5fd" title="薰衣草紫"></button>
+<button class="tdot" data-t="peach" style="background:#fdf5ea" title="蜜桃杏"></button>
+<button class="tdot" data-t="night" style="background:#22242a" title="夜读"></button>
+</div></div>
+<script>
+(function(){var btn=document.getElementById('themeBtn'),pn=document.getElementById('themePanel');
+function cur(){return document.documentElement.dataset.theme||'paper'}
+function mark(){pn.querySelectorAll('.tdot').forEach(function(d){d.classList.toggle('on',d.dataset.t===cur())})}
+btn.addEventListener('click',function(){pn.classList.toggle('open');mark()});
+pn.querySelectorAll('.tdot').forEach(function(d){d.addEventListener('click',function(){document.documentElement.dataset.theme=d.dataset.t;try{localStorage.setItem('erdTheme',d.dataset.t)}catch(e){}mark()})});
+document.addEventListener('click',function(e){if(!pn.contains(e.target)&&e.target!==btn)pn.classList.remove('open')});
+})();
 </script>
 </body></html>
