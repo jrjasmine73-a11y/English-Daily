@@ -23,7 +23,7 @@ html[data-theme="night"]{--tbg:#101114;--tpaper:#f4f4f5}
 .tdot{width:34px;height:34px;border-radius:50%;border:2px solid rgba(0,0,0,.14);cursor:pointer;padding:0}
 .tdot.on{border-color:#c0392b;transform:scale(1.1)}
 body{font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
-background:var(--tbg);color:#1c1917;line-height:1.7;max-width:900px;margin:0 auto;overflow-x:hidden}
+background:var(--tbg);color:#1c1917;line-height:1.7;max-width:1400px;margin:0 auto;overflow-x:hidden}
 .topbar{background:linear-gradient(135deg,#1e3a5f,#0f766e);color:#fff;
 width:100vw;margin-left:calc(50% - 50vw);padding:36px 20px 32px;text-align:center}
 .topbar h1{font-size:26px;margin-bottom:6px}
@@ -90,6 +90,7 @@ background:rgba(0,0,0,.45);border-radius:6px;padding:2px 8px;z-index:2}
 .filterbar.on{display:block}
 .filterbar button{margin-left:8px;font-size:12.5px;color:#b91c1c;background:#fef2f2;
 border:1px solid #fca5a5;border-radius:14px;padding:3px 12px;cursor:pointer}
+@media(min-width:1100px){.grid{grid-template-columns:repeat(4,1fr)}.feats{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:640px){.grid{grid-template-columns:1fr 1fr}.pcard{min-height:150px}
 .pcard.big{grid-column:span 2;grid-row:auto;min-height:210px}.pcard.big .pttl{font-size:17px}}
 </style></head>
